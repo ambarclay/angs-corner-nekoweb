@@ -25,6 +25,6 @@ jobs:
           BUILD_DIR: "./build"
           DEPLOY_DIR: "/"
           CLEANUP: "False"
-          DELAY: ".5"
+          DELAY: "0.5"
           NEKOWEB_PAGENAME: "angs-corner"
           ENCRYPTION_KEY: ${{ secrets.NEKOWEB_ENCRYPTION_KEY }}
