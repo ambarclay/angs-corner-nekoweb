@@ -27,4 +27,3 @@ jobs:
           CLEANUP: "False"
           DELAY: ".5"
           NEKOWEB_PAGENAME: "angs-corner"
-          ENCRYPTION_KEY: ${{ secrets.NEKOWEB_ENCRYPTION_KEY }}
