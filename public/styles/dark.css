@@ -1,3 +1,9 @@
+:root {
+  --text: #ffffff;
+  --hilight: #ccff00;
+  --boxbackground: #000000;
+}
+
 html {
   cursor: url("/images/win982.png"), default;
   height: 100vh;
@@ -5,18 +11,16 @@ html {
 
 body {
   background-image: url("/images/starbg2.gif");
-  /* background-color: black; */
-  color: white;
+  color: var(--text);
   font-family: "VT323", monospace;
   margin: 0;
   line-height: 120%;
 }
 
-/* GENERAL ELEMENTS */
 hr {
   border-width: 0;
   height: 2px;
-  border-top: 2px dashed white;
+  border-top: 2px dashed var(--text);
 }
 
 h2 {
@@ -35,24 +39,18 @@ figure {
 
 figcaption {
   font-size: 15px;
-  color: white;
+  color: var(--text);
   margin-top: 5px;
-}
-
-#light-theme-content {
-  display: none;
-}
-
-#dark-theme-content {
-  display: block;
 }
 
 .theme-1 {
   display: none;
 }
+
 button:hover {
   cursor: pointer;
 }
+
 #postDate {
   text-align: left;
   margin-left: 30px;
@@ -63,15 +61,13 @@ button:hover {
 }
 
 /* HOME PAGE */
-/* top of page and bg content */
-
+/* HEADER */
 .header {
   width: 1090px;
   height: 110px;
   margin: 0 auto;
   margin-bottom: 10px;
   text-align: center;
-  /* border: 1px solid white; */
   position: relative;
 }
 
@@ -79,15 +75,14 @@ button:hover {
   position: absolute;
   top: 30px;
   left: 46%;
-  /* transform: translate(-50%, -50%); */
   width: 400px;
   text-align: center;
-  color: white;
+  color: var(--text);
   font-size: 70px;
 }
 
 .header h1:hover {
-  color: #ccff00;
+  color: var(--hilight);
 }
 
 .angy {
@@ -106,17 +101,17 @@ button:hover {
   position: absolute;
   top: 86%;
   left: 2%;
-  border: 1px solid white;
+  border: 1px solid var(--text);
   padding: 10px;
   padding-top: 15px;
-  background-color: black;
+  background-color: var(--boxbackground);
 }
 
 .link-back:hover {
   p {
-    color: #ccff00;
+    color: var(--hilight);
   }
-  border: 1px solid #ccff00;
+  border: 1px solid var(--hilight);
 }
 
 .link-back-button {
@@ -147,10 +142,9 @@ textarea {
   margin-top: 20px;
 }
 
-/* right side content */
+/* RIGHT SIDEBAR */
 .rightbar {
   width: 180px;
-  /* padding: 5px; */
   margin-top: 5px;
   float: right;
 }
@@ -158,8 +152,8 @@ textarea {
 .clap {
   padding: 10px;
   padding-bottom: 8px;
-  border: 1px solid white;
-  background-color: black;
+  border: 1px solid var(--text);
+  background-color: var(--boxbackground);
   text-align: center;
 }
 
@@ -168,7 +162,7 @@ textarea {
 }
 
 .clap:hover {
-  border: 1px solid #ccff00;
+  border: 1px solid var(--hilight);
 }
 
 .clapheading {
@@ -178,13 +172,13 @@ textarea {
 .guestbook-link {
   text-align: center;
   text-decoration: none;
-  border: 1px solid white;
+  border: 1px solid var(--text);
   padding: 10px;
-  background-color: black;
+  background-color: var(--boxbackground);
 }
 
 .guestbook-link:hover {
-  border: 1px solid #ccff00;
+  border: 1px solid var(--hilight);
 }
 
 .guestbookGif {
@@ -203,13 +197,13 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border: 1px solid white;
+  border: 1px solid var(--text);
   padding: 10px;
-  background-color: black;
+  background-color: var(--boxbackground);
 }
 
 .tamanotchi:hover {
-  border: 1px solid #ccff00;
+  border: 1px solid var(--hilight);
 }
 
 .tamanotchiheading {
@@ -223,10 +217,10 @@ textarea {
 
 .cursorattribution {
   margin: 0 auto;
-  border: 1px solid white;
+  border: 1px solid var(--text);
   padding: 10px;
   text-align: center;
-  background-color: black;
+  background-color: var(--boxbackground);
 }
 
 .visitorheading {
@@ -234,34 +228,34 @@ textarea {
 }
 
 .visitors {
-  border: 1px solid white;
+  border: 1px solid var(--text);
   padding: 10px;
-  background-color: black;
+  background-color: var(--boxbackground);
   text-align: center;
   height: 23px;
   padding-top: 15px;
 }
 
 .visitors:hover {
-  border: 1px solid #ccff00;
+  border: 1px solid var(--hilight);
 }
 
 .style-changer {
-  border: 1px solid white;
+  border: 1px solid var(--text);
   padding: 10px;
-  background-color: black;
+  background-color: var(--boxbackground);
   text-align: center;
 }
 
 .style-changer:hover {
-  border: 1px solid #ccff00;
+  border: 1px solid var(--hilight);
 }
 
 button {
-  background-color: black;
+  background-color: var(--boxbackground);
   border: none;
   border-radius: 10px;
-  color: white;
+  color: var(--text);
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -277,49 +271,44 @@ button:hover {
 }
 
 .find-me {
-  border: 1px solid white;
+  border: 1px solid var(--text);
   padding: 10px;
-  background-color: black;
+  background-color: var(--boxbackground);
 }
 
 .find-me:hover {
-  border: 1px solid #ccff00;
+  border: 1px solid var(--hilight);
 }
 
 .chatbox {
-  border: 1px solid white;
-  background: black;
+  border: 1px solid var(--text);
+  background: var(--boxbackground);
   padding-left: 5px;
   padding-right: 5px;
 }
 
 .chatbox:hover {
-  border: 1px solid #ccff00;
+  border: 1px solid var(--hilight);
 }
 
 .pp {
   padding: 0;
   margin: 0;
 }
-/* middle content */
 
+/* CENTER MAIN CONTENT */
 .main {
   width: 740px;
-  /* padding: 10px; */
-  /* margin: 10px; */
   margin-top: 5px;
   margin-bottom: 0;
   padding-bottom: 0;
   display: block;
-  /*height: 80vh;*/
   height: 675.5px;
   overflow-x: auto;
-  scrollbar-width: thin;
-  scrollbar-color: black;
 }
 
 .main .link {
-  color: #ccff00;
+  color: var(--hilight);
 }
 
 .welcome {
@@ -339,42 +328,42 @@ button:hover {
   text-align: center;
   width: 700px;
   margin: 0 auto;
-  border: 1px solid white;
+  border: 1px solid var(--text);
   padding: 10px;
-  background-color: black;
+  background-color: var(--boxbackground);
 }
 
 .welcomePost:hover {
-  border: 1px solid #ccff00;
+  border: 1px solid var(--hilight);
   h2 {
-    color: #ccff00;
+    color: var(--hilight);
   }
   p {
-    color: white;
+    color: var(--text);
   }
   .favoriteslists {
-    color: white;
+    color: var(--text);
   }
   .list {
-    color: white;
+    color: var(--text);
   }
   .box-title {
-    color: #ccff00;
+    color: var(--hilight);
   }
   ul {
-    color: white;
+    color: var(--text);
   }
   h3 {
-    color: white;
+    color: var(--text);
   }
   .box-title-welcome {
-    color: #ccff00;
+    color: var(--hilight);
   }
   .blog-h1 {
-    color: #ccff00;
+    color: var(--hilight);
   }
   .green-hover {
-    color: #ccff00;
+    color: var(--hilight);
   }
 }
 
@@ -410,7 +399,7 @@ marquee img {
 }
 
 .abitaboutme {
-  color: white;
+  color: var(--text);
 }
 
 .abitaboutme h2 {
@@ -451,11 +440,11 @@ marquee img {
 
 .link {
   text-decoration: none;
-  color: white;
+  color: var(--text);
 }
 
 .link:hover {
-  color: #ccff00;
+  color: var(--hilight);
 }
 
 .leftflower {
@@ -482,25 +471,24 @@ marquee img {
   margin: 0 auto;
 }
 
-/* left side content */
+/* LEFT SIDEBAR */
 .leftbar {
   width: 180px;
-  /* padding: 5px; */
   margin-top: 5px;
   float: left;
 }
 
 .navbar {
   padding: 10px;
-  border: 1px solid white;
-  color: white;
-  background-color: black;
+  border: 1px solid var(--text);
+  color: var(--text);
+  background-color: var(--boxbackground);
   height: 155.5px;
   overflow-x: scroll;
 }
 
 .navbar:hover {
-  border: 1px solid #ccff00;
+  border: 1px solid var(--hilight);
 }
 
 .navList {
@@ -520,7 +508,7 @@ marquee img {
 }
 
 .box-title {
-  background-color: black;
+  background-color: var(--boxbackground);
   position: absolute;
   top: -25px;
   left: 15px;
@@ -528,7 +516,7 @@ marquee img {
 }
 
 .box-title-welcome {
-  background-color: black;
+  background-color: var(--boxbackground);
   position: absolute;
   top: -25px;
   left: 28px;
@@ -545,17 +533,21 @@ marquee img {
   display: none;
 }
 
+#statuscafe-content:hover {
+  color: var(--text);
+}
+
 .mystatus {
   margin-top: 5px;
   padding: 10px;
   padding-bottom: 0;
   height: 70px;
-  border: 1px solid white;
-  background-color: black;
+  border: 1px solid var(--text);
+  background-color: var(--boxbackground);
 }
 
 .mystatus:hover {
-  border: 1px solid #ccff00;
+  border: 1px solid var(--hilight);
 }
 
 .mystatus p {
@@ -581,30 +573,30 @@ marquee img {
   padding-top: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 1px solid white;
-  background-color: black;
+  border: 1px solid var(--text);
+  background-color: var(--boxbackground);
   text-align: center;
 }
 
 .mytime:hover {
-  border: 1px solid #ccff00;
+  border: 1px solid var(--hilight);
 }
 
 .side-box:hover {
-  color: #ccff00;
+  color: var(--hilight);
 }
 
 .navlinkbox {
-  border: 1px solid white;
+  border: 1px solid var(--text);
   padding: 5px;
   padding-top: 8px;
   padding-bottom: 0.5px;
   text-align: center;
-  background-color: black;
+  background-color: var(--boxbackground);
 }
 
 .navlinkbox:hover {
-  border: 1px solid #ccff00;
+  border: 1px solid var(--hilight);
 }
 
 .navlinkads {
@@ -613,16 +605,16 @@ marquee img {
 }
 
 .navlink {
-  color: white;
+  color: var(--text);
   text-decoration: none;
 }
 
 .navlink:hover {
-  color: #ccff00;
+  color: var(--hilight);
 }
 
 .navList li:hover {
-  color: #ccff00;
+  color: var(--hilight);
 }
 
 .statuspost {
@@ -638,14 +630,14 @@ marquee img {
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 1px solid white;
-  color: white;
+  border: 1px solid var(--text);
+  color: var(--text);
   scrollbar-width: thin;
-  background: black;
+  background-color: var(--boxbackground);
 }
 
 .changelog:hover {
-  border: 1px solid #ccff00;
+  border: 1px solid var(--hilight);
 }
 
 .changelogheading {
@@ -675,9 +667,9 @@ marquee img {
   height: 60px;
 }
 
-/* content on all sides */
+/* OTHER HOMEPAGE STYLES */
 .hilight {
-  color: #ccff00;
+  color: var(--hilight);
 }
 
 .sidebarHeading {
@@ -694,13 +686,13 @@ marquee img {
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  border: 1px solid white;
+  border: 1px solid var(--text);
   scrollbar-width: thin;
-  background-color: black;
+  background-color: var(--boxbackground);
 }
 
 .buttons:hover {
-  border: 1px solid #ccff00;
+  border: 1px solid var(--hilight);
 }
 
 .buttons > img {
@@ -727,16 +719,9 @@ marquee img {
   margin-top: 50px;
 }
 
-/* .verybottom {
-  text-align: center;
-  margin-top: 20px;
-  color: white;
-} */
-
 /* ABOUT PAGE */
-
 .about-box-title {
-  background-color: black;
+  background-color: var(--boxbackground);
   position: absolute;
   top: -25px;
   left: 15px;
@@ -753,7 +738,7 @@ marquee img {
 
 .aboutmeinterests > .side-box:hover {
   .about-box-title {
-    color: #ccff00;
+    color: var(--hilight);
   }
 }
 
@@ -762,13 +747,13 @@ marquee img {
   width: 170px;
   height: 170px;
   overflow-y: auto;
-  border: 1px solid white;
+  border: 1px solid var(--text);
   padding: 10px;
 }
 
 .list:hover {
-  border: 1px solid #ccff00;
-  color: white;
+  border: 1px solid var(--hilight);
+  color: var(--text);
 }
 
 .list p {
@@ -787,18 +772,11 @@ marquee img {
 
 .favoriteslists {
   margin: 0 auto;
-  /* border: 1px solid white; */
   width: 700px;
-  background-color: black;
+  background-color: var(--boxbackground);
   margin-top: 20px;
   margin-bottom: 20px;
-  /* padding: 10px;
-  padding-bottom: 30px; */
 }
-
-/* .favoriteslists:hover {
-  color: white;
-} */
 
 .favoriteslists h3 {
   text-align: center;
@@ -815,16 +793,16 @@ marquee img {
 }
 
 .vibes {
-  border: 1px solid white;
+  border: 1px solid var(--text);
   padding: 10px;
   text-align: center;
   height: 575px;
-  background-color: black;
+  background-color: var(--boxbackground);
   overflow-x: scroll;
 }
 
 .vibes:hover {
-  border: 1px solid #ccff00;
+  border: 1px solid var(--hilight);
 }
 
 .leftbutterfly {
@@ -896,7 +874,7 @@ marquee img {
 }
 
 .restoration-img:hover {
-  border: 1px solid #ccff00;
+  border: 1px solid var(--hilight);
 }
 
 /* STWABEWWY PAGE */
@@ -929,12 +907,12 @@ marquee img {
 
 .shrinelink {
   text-decoration: none;
-  color: white;
+  color: var(--text);
   font-size: 30px;
 }
 
 .shrinelink:hover {
-  color: #ccff00;
+  color: var(--hilight);
 }
 
 .leftstar {
@@ -980,7 +958,7 @@ a .camera-img:hover {
   filter: drop-shadow(0px 0px 20px rgba(204, 255, 0, 1));
 }
 
-/* COLLECTIONS PAGE */
+/* DIGITAL COLLECTIONS PAGE */
 .collectionsheading {
   text-align: center;
   width: 200px;
@@ -988,7 +966,7 @@ a .camera-img:hover {
 }
 
 .collections-link {
-  color: white;
+  color: var(--text);
 }
 
 .blinkiesheader {
@@ -1024,7 +1002,7 @@ a .camera-img:hover {
   margin: 0 auto;
   text-align: center;
   background-image: url("../images/multi022.jpg");
-  border: 8px double white;
+  border: 8px double var(--text);
   border-radius: 20px;
   padding-bottom: 20px;
 }
@@ -1040,7 +1018,7 @@ a .camera-img:hover {
 }
 
 .centerdiv a p:hover {
-  color: #ccff00;
+  color: var(--hilight);
 }
 
 .backlink {
@@ -1058,6 +1036,7 @@ a .camera-img:hover {
   padding-right: 20px;
 }
 
+/* CRT FILTER */
 .crt::after {
   content: " ";
   display: block;
@@ -1090,45 +1069,34 @@ a .camera-img:hover {
   animation: textShadow 1.6s infinite;
 }
 
-a {
-  text-decoration: none;
-}
-
-/*#CONTAINER is the rectangle that contains everything but the background!*/
+/* BLOG STYLES */
 #container {
   margin: 0 auto;
   width: 100%;
-  /* max-width: 1100px; */
-  background-color: black;
-  color: white;
-  /* outline-color: white;
-    outline-style: ridge;
-    outline-width: 4px;
-    outline-offset: 0; */
+  background-color: var(--boxbackground);
+  color: var(--text);
 }
 
-/* #content {
-    padding: 10px 5% 20px 5%;
-  } */
+#postDate {
+  margin-top: 0;
+}
 
 /*HEADER STYLE*/
 #header {
-  /* background-color: #384879; */
-  /* background-image: url("../../images/multi022.jpg"); */
   padding: 0 5%;
-  border-color: white;
+  border-color: var(--text);
   border-radius: 10px 10px 0 0;
-  /* border-style: ridge;
-    border-width: 0 0 4px 0; */
   text-align: center;
   font-weight: bold;
 }
+
 #header ul {
   list-style-type: none;
   padding: 0.5em 0;
   margin: 0;
   text-align: center;
 }
+
 #header li {
   font-size: 1.2em;
   display: inline-block;
@@ -1137,21 +1105,23 @@ a {
   margin-bottom: 0.2em;
   margin-top: 0.2em;
 }
+
 #header li a {
-  color: white;
+  color: var(--text);
   text-decoration: none;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  border: 1px solid white;
-  background-color: black;
+  border: 1px solid var(--text);
+  background-color: var(--boxbackground);
   margin-left: 10px;
   margin-right: 10px;
 }
+
 #header li a:hover {
-  border: 1px solid #ccff00;
-  color: #ccff00;
+  border: 1px solid var(--hilight);
+  color: var(--hilight);
 }
 
 /*POST LIST STYLE*/
@@ -1164,8 +1134,9 @@ a {
   margin: 0 auto;
   text-align: left;
 }
+
 #postlistdiv ul li:hover {
-  color: #ccff00;
+  color: var(--hilight);
 }
 
 #recentpostlistdiv ul {
@@ -1175,7 +1146,7 @@ a {
   width: 600px;
   display: block;
   margin: 0 auto;
-  color: white;
+  color: var(--text);
 }
 
 #recentpostlistdiv {
@@ -1184,15 +1155,8 @@ a {
 }
 
 #recentpostlistdiv ul li:hover {
-  color: #ccff00;
+  color: var(--hilight);
 }
-
-/* #recentpostlistdiv2 ul li::marker {
-  color: white;
-} */
-/* #postlistdiv2 ul li::marker {
-  color: white;
-} */
 
 #recentpostlistdiv h2 {
   text-align: center;
@@ -1219,31 +1183,28 @@ a {
 #footer {
   font-size: 0.8em;
   padding: 0 5% 10px 5%;
-  /* background-image: url("../../images/multi022.jpg"); */
   border-radius: 0 0 10px 10px;
 }
 
+/* ANCHOR TAG STYLES */
 a {
   text-decoration: none;
-  color: white;
+  color: var(--text);
 }
 
 a:visited {
-  color: white;
+  color: var(--text);
   text-decoration: none;
 }
 
 a:hover {
-  color: #ccff00;
+  color: var(--hilight);
   cursor: pointer;
 }
 
+/* MIS PAGE MIN HEIGHTS */
 .blog-oops {
   height: 653.5px;
-}
-
-#postDate {
-  margin-top: 0;
 }
 
 .not-found {
@@ -1266,6 +1227,7 @@ a:hover {
   min-height: 653.5px;
 }
 
+/* RESOURCES PAGE */
 .resource-list {
   text-align: left;
   list-style-type: ">> ";
@@ -1279,86 +1241,3 @@ a:hover {
   margin: 0 auto;
   padding-top: 10px;
 }
-
-#statuscafe-content:hover {
-  color: white;
-}
-
-/* unused stuff i dont wanna get rid of yet */
-
-/* text-shadow: 2px 2px 5px black; */
-
-/* .links {
-  width: 550px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  border: 4px dashed white;
-} */
-
-/* .mainnavimg {
-  height: 30px;
-  padding: 10px;
-  padding-right: 20px;
-} */
-
-/* INDEX PAGE
-.indexmain {
-  width: 600px;
-  margin: 0 auto;
-  background-color: #ffedf5;
-  padding: 20px;
-}
-
-.contentindex {
-  width: 900px;
-  margin: 0 auto;
-  display: flex;
-  background-image: url("../images/multi022.jpg");
-  border: 7px double white;
-  border-radius: 0px 0px 30px 30px;
-}
-
-.headerindex {
-  width: 900px;
-  height: 150px;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  text-align: center;
-  background-image: url("../images/multi022.jpg");
-  border: 7px double white;
-  border-radius: 30px 30px 0px 0px;
-  position: relative;
-}
-
-.helloindexheading {
-  width: 400px;
-}
-
-.indexenter {
-  color: #5e81c6;
-  text-decoration: none;
-  border: 3px dashed white;
-  border-radius: 10px;
-  padding: 5px 10px 5px 10px;
-}
-
-.everythingindex {
-  position: absolute;
-  top: 10%;
-  left: 20%;
-}
-
-.nekoindex {
-  margin-top: 25px;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-} */
-/* 
-.mepng {
-  width: 200px;
-  border-radius: 10px;
-  border: 4px solid white;
-} */

@@ -9,7 +9,7 @@ class Changelog extends HTMLElement {
           <div class="changelogposts">
             <p>
               <span class="hilight"><b>5/6/25:</b></span> connected to github. trying out deploy 
-              to nekoweb
+              to nekoweb. got it to work...?
             </p>
             <p>
               <span class="hilight"><b>5/5/25:</b></span> reworked light theme. added resources 
