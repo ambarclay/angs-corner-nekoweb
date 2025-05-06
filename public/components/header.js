@@ -17,8 +17,8 @@ class Header extends HTMLElement {
         <div class="link-back">
           <img src="/images/link-me.gif" class="sidebarHeading theme-1" />
           <p class="box-title theme-2">link to my site</p>
-          <img src="/images/buttons/angscorner.gif" class="link-back-button"/>
-          <textarea id="link-back" name="link-back" rows="2" cols="15" ><a href="https://angs-corner.nekoweb.org/"><img src="https://i.imgur.com/E3y1nGZ.gif" /></a></textarea>
+          <img src="/images/buttons/angs-corner-button-2.gif" class="link-back-button"/>
+          <textarea id="link-back" name="link-back" rows="2" cols="15" ><a href="https://angs-corner.nekoweb.org/"><img src="https://i.imgur.com/rd7l8WZ.gif" referrerpolicy="no-referrer" /></a></textarea>
         </div>
         `;
   }
