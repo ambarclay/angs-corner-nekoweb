@@ -8,8 +8,12 @@ class Changelog extends HTMLElement {
         <div class="changelog">
           <div class="changelogposts">
             <p>
+              <span class="hilight"><b>5/6/25:</b></span> connected to github. trying out deploy 
+              to nekoweb
+            </p>
+            <p>
               <span class="hilight"><b>5/5/25:</b></span> reworked light theme. added resources 
-              page and chat box
+              page and chat box. moved site to nekoweb
             </p>
             <p>
               <span class="hilight"><b>4/30/25:</b></span> made components for clap, visitor
