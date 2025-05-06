@@ -1,0 +1,170 @@
+html {
+  cursor: url("/shrines/images/heart-cursor.png"), default;
+}
+
+@font-face {
+  font-family: "8bitoperator";
+  src: url("/styles/8bitoperator_jve.woff") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-image: url("/shrines/images/undertale-green-grid.png");
+  /* background-color: black; */
+  font-family: "8bitoperator", sans-serif;
+  letter-spacing: 1px;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 20px;
+  text-align: center;
+}
+
+.content {
+  width: 1000px;
+  margin: 0 auto;
+  border: 3px solid white;
+}
+
+.header {
+  width: 700px;
+  height: auto;
+  padding-left: 200px;
+}
+
+.bounds {
+  position: absolute;
+  width: 700px;
+  height: 200px;
+}
+
+@keyframes hor-movement {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+
+@keyframes ver-movement {
+  from {
+    margin-top: 0%;
+  }
+  to {
+    margin-top: 100%;
+  }
+}
+
+.image {
+  animation-name: hor-movement, ver-movement;
+  animation-duration: 3.541s, 1.914s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  border: 2px solid white;
+}
+
+.napstablook {
+  height: 150px;
+  position: absolute;
+  top: 700px;
+  left: 50px;
+}
+
+.backarrow {
+  position: absolute;
+  top: -20px;
+  left: 30px;
+  font-size: 40px;
+}
+
+.downarrow {
+  transform: rotate(270deg);
+  position: absolute;
+  font-size: 40px;
+  top: 770px;
+  left: 1350px;
+}
+
+.spacebetweensections {
+  height: 30px;
+}
+
+.spacebetweenheader {
+  height: 1000px;
+}
+
+.logo {
+  background-image: url("/shrines/images/Undertale-logo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.writing {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.main {
+  background-color: black;
+  width: 1000px;
+  margin: 0 auto;
+  border: 4px solid white;
+}
+
+.description {
+  width: 700px;
+  margin: 0 auto;
+  border: 2px solid white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.description:hover {
+  border: 2px solid yellow;
+}
+
+.rambling {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.annoying {
+  height: 70px;
+  width: 70px;
+  background-image: url("/shrines/images/Annoying_Dog_screenshot_dogcheck.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 400px;
+  margin: 0 auto;
+}
+
+.verybottom {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}

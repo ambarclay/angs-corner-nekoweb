@@ -1,0 +1,1364 @@
+html {
+  cursor: url("/images/win982.png"), default;
+  height: 100vh;
+}
+
+body {
+  background-image: url("/images/starbg2.gif");
+  /* background-color: black; */
+  color: white;
+  font-family: "VT323", monospace;
+  margin: 0;
+  line-height: 120%;
+}
+
+/* GENERAL ELEMENTS */
+hr {
+  border-width: 0;
+  height: 2px;
+  border-top: 2px dashed white;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 500px;
+}
+
+figcaption {
+  font-size: 15px;
+  color: white;
+  margin-top: 5px;
+}
+
+#light-theme-content {
+  display: none;
+}
+
+#dark-theme-content {
+  display: block;
+}
+
+.theme-1 {
+  display: none;
+}
+button:hover {
+  cursor: pointer;
+}
+#postDate {
+  text-align: left;
+  margin-left: 30px;
+}
+
+.archivediv {
+  margin-top: 20px;
+}
+
+/* HOME PAGE */
+/* top of page and bg content */
+
+.header {
+  width: 1090px;
+  height: 110px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-align: center;
+  /* border: 1px solid white; */
+  position: relative;
+}
+
+.header h1 {
+  position: absolute;
+  top: 30px;
+  left: 46%;
+  /* transform: translate(-50%, -50%); */
+  width: 400px;
+  text-align: center;
+  color: white;
+  font-size: 70px;
+}
+
+.header h1:hover {
+  color: #ccff00;
+}
+
+.angy {
+  width: 120px;
+  position: absolute;
+  top: 734%;
+  left: 109%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 5px black;
+}
+
+.link-back {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 86%;
+  left: 2%;
+  border: 1px solid white;
+  padding: 10px;
+  padding-top: 15px;
+  background-color: black;
+}
+
+.link-back:hover {
+  p {
+    color: #ccff00;
+  }
+  border: 1px solid #ccff00;
+}
+
+.link-back-button {
+  padding-bottom: 10px;
+}
+
+textarea {
+  font-size: 12px;
+}
+
+.olruggio {
+  height: 130px;
+  position: absolute;
+  top: -0.2%;
+  left: 26%;
+  -webkit-filter: drop-shadow(0px 0px 3px white);
+  filter: drop-shadow(0px 0px 3px white);
+  z-index: -1;
+}
+
+.content {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.bestviewed {
+  margin-top: 20px;
+}
+
+/* right side content */
+.rightbar {
+  width: 180px;
+  /* padding: 5px; */
+  margin-top: 5px;
+  float: right;
+}
+
+.clap {
+  padding: 10px;
+  padding-bottom: 8px;
+  border: 1px solid white;
+  background-color: black;
+  text-align: center;
+}
+
+.clap img {
+  padding-top: 2px;
+}
+
+.clap:hover {
+  border: 1px solid #ccff00;
+}
+
+.clapheading {
+  width: 130px;
+}
+
+.guestbook-link {
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 10px;
+  background-color: black;
+}
+
+.guestbook-link:hover {
+  border: 1px solid #ccff00;
+}
+
+.guestbookGif {
+  width: 150px;
+}
+
+#guestbook-frame {
+  width: 100%;
+  height: 600px;
+  border: 0;
+}
+
+.tamanotchi {
+  width: 160px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid white;
+  padding: 10px;
+  background-color: black;
+}
+
+.tamanotchi:hover {
+  border: 1px solid #ccff00;
+}
+
+.tamanotchiheading {
+  width: 120px;
+  padding-bottom: 5px;
+}
+
+.sidestamp {
+  padding-bottom: 7px;
+}
+
+.cursorattribution {
+  margin: 0 auto;
+  border: 1px solid white;
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+}
+
+.visitorheading {
+  width: 80px;
+}
+
+.visitors {
+  border: 1px solid white;
+  padding: 10px;
+  background-color: black;
+  text-align: center;
+  height: 23px;
+  padding-top: 15px;
+}
+
+.visitors:hover {
+  border: 1px solid #ccff00;
+}
+
+.style-changer {
+  border: 1px solid white;
+  padding: 10px;
+  background-color: black;
+  text-align: center;
+}
+
+.style-changer:hover {
+  border: 1px solid #ccff00;
+}
+
+button {
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-family: "VT323", monospace;
+}
+
+button:hover {
+  background-image: url("/images/multi022.jpg");
+  font-family: "Gaegu", sans-serif;
+  font-size: 14px;
+}
+
+.find-me {
+  border: 1px solid white;
+  padding: 10px;
+  background-color: black;
+}
+
+.find-me:hover {
+  border: 1px solid #ccff00;
+}
+
+.chatbox {
+  border: 1px solid white;
+  background: black;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.chatbox:hover {
+  border: 1px solid #ccff00;
+}
+
+.pp {
+  padding: 0;
+  margin: 0;
+}
+/* middle content */
+
+.main {
+  width: 740px;
+  /* padding: 10px; */
+  /* margin: 10px; */
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  display: block;
+  /*height: 80vh;*/
+  height: 675.5px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: black;
+}
+
+.main .link {
+  color: #ccff00;
+}
+
+.welcome {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 50px;
+}
+
+.gifheading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.welcomePost {
+  text-align: center;
+  width: 700px;
+  margin: 0 auto;
+  border: 1px solid white;
+  padding: 10px;
+  background-color: black;
+}
+
+.welcomePost:hover {
+  border: 1px solid #ccff00;
+  h2 {
+    color: #ccff00;
+  }
+  p {
+    color: white;
+  }
+  .favoriteslists {
+    color: white;
+  }
+  .list {
+    color: white;
+  }
+  .box-title {
+    color: #ccff00;
+  }
+  ul {
+    color: white;
+  }
+  h3 {
+    color: white;
+  }
+  .box-title-welcome {
+    color: #ccff00;
+  }
+  .blog-h1 {
+    color: #ccff00;
+  }
+  .green-hover {
+    color: #ccff00;
+  }
+}
+
+.welcomePost p,
+.welcomePost h2 {
+  text-align: left;
+}
+
+.welcomeGif {
+  width: 500px;
+  padding-top: 10px;
+}
+
+marquee img {
+  padding-right: 10px;
+}
+
+.extraspace {
+  padding-top: 15px;
+}
+
+.aboutGif {
+  width: 200px;
+  padding-top: 10px;
+}
+
+.facts {
+  display: flex;
+  width: 680px;
+  text-align: left;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.abitaboutme {
+  color: white;
+}
+
+.abitaboutme h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.quickfacts {
+  margin-bottom: 20px;
+  margin-right: 30px;
+}
+
+.morefavorites {
+  width: 200px;
+  padding-top: 24px;
+}
+
+.facts p {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+.facts ul {
+  margin: 0;
+  list-style-type: ">> ";
+}
+
+.funfacts {
+  margin-bottom: 13px;
+}
+
+.welcomePost h3 {
+  padding-bottom: 5px;
+  margin-bottom: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link:hover {
+  color: #ccff00;
+}
+
+.leftflower {
+  display: none;
+}
+
+.rightflower {
+  display: none;
+}
+
+.centerimg {
+  display: block;
+  margin: auto;
+}
+
+.stampsScroll {
+  padding-top: 20px;
+}
+
+.centerimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* left side content */
+.leftbar {
+  width: 180px;
+  /* padding: 5px; */
+  margin-top: 5px;
+  float: left;
+}
+
+.navbar {
+  padding: 10px;
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+  height: 155.5px;
+  overflow-x: scroll;
+}
+
+.navbar:hover {
+  border: 1px solid #ccff00;
+}
+
+.navList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side-box {
+  margin-top: 17px;
+  position: relative;
+}
+
+.side-box-about {
+  margin-top: 19px;
+  position: relative;
+}
+
+.box-title {
+  background-color: black;
+  position: absolute;
+  top: -25px;
+  left: 15px;
+  font-size: 16px;
+}
+
+.box-title-welcome {
+  background-color: black;
+  position: absolute;
+  top: -25px;
+  left: 28px;
+  font-size: 16px;
+}
+
+#statuscafe-content {
+  height: 67px;
+  overflow-x: auto;
+  line-height: 100%;
+}
+
+#statuscafe-username {
+  display: none;
+}
+
+.mystatus {
+  margin-top: 5px;
+  padding: 10px;
+  padding-bottom: 0;
+  height: 70px;
+  border: 1px solid white;
+  background-color: black;
+}
+
+.mystatus:hover {
+  border: 1px solid #ccff00;
+}
+
+.mystatus p {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.navbar h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.indentList {
+  list-style-type: none;
+}
+
+.timeheading {
+  width: 80px;
+}
+
+.mytime {
+  padding: 10px;
+  padding-top: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid white;
+  background-color: black;
+  text-align: center;
+}
+
+.mytime:hover {
+  border: 1px solid #ccff00;
+}
+
+.side-box:hover {
+  color: #ccff00;
+}
+
+.navlinkbox {
+  border: 1px solid white;
+  padding: 5px;
+  padding-top: 8px;
+  padding-bottom: 0.5px;
+  text-align: center;
+  background-color: black;
+}
+
+.navlinkbox:hover {
+  border: 1px solid #ccff00;
+}
+
+.navlinkads {
+  width: 160px;
+  height: 160px;
+}
+
+.navlink {
+  color: white;
+  text-decoration: none;
+}
+
+.navlink:hover {
+  color: #ccff00;
+}
+
+.navList li:hover {
+  color: #ccff00;
+}
+
+.statuspost {
+  height: 100px;
+  overflow-y: auto;
+}
+
+.statuscafe {
+  width: 160px;
+}
+
+.changelog {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid white;
+  color: white;
+  scrollbar-width: thin;
+  background: black;
+}
+
+.changelog:hover {
+  border: 1px solid #ccff00;
+}
+
+.changelogheading {
+  width: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+.changelogposts {
+  height: 100px;
+  overflow-y: auto;
+}
+
+.changelogposts > p {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.1;
+  padding-bottom: 6px;
+}
+
+.timecounter {
+  pointer-events: none;
+}
+
+.statuspost {
+  height: 60px;
+}
+
+/* content on all sides */
+.hilight {
+  color: #ccff00;
+}
+
+.sidebarHeading {
+  width: 100px;
+}
+
+.buttons {
+  width: 160px;
+  display: flex;
+  justify-content: left;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-top: 12.5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid white;
+  scrollbar-width: thin;
+  background-color: black;
+}
+
+.buttons:hover {
+  border: 1px solid #ccff00;
+}
+
+.buttons > img {
+  padding-right: 3px;
+  padding-bottom: 3px;
+}
+
+.borderblinkie {
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+
+.blinkiecenter {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.foot {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* .verybottom {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+} */
+
+/* ABOUT PAGE */
+
+.about-box-title {
+  background-color: black;
+  position: absolute;
+  top: -25px;
+  left: 15px;
+}
+
+.aboutmeinterests {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.aboutmeinterests > .side-box:hover {
+  .about-box-title {
+    color: #ccff00;
+  }
+}
+
+.list {
+  text-align: left;
+  width: 170px;
+  height: 170px;
+  overflow-y: auto;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.list:hover {
+  border: 1px solid #ccff00;
+  color: white;
+}
+
+.list p {
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+  font-weight: bold;
+  color: #5e81c6;
+}
+
+.list ul {
+  padding-left: 30px;
+  margin-top: 0;
+  list-style-type: ">> ";
+}
+
+.favoriteslists {
+  margin: 0 auto;
+  /* border: 1px solid white; */
+  width: 700px;
+  background-color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* padding: 10px;
+  padding-bottom: 30px; */
+}
+
+/* .favoriteslists:hover {
+  color: white;
+} */
+
+.favoriteslists h3 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.favoriteslists > p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.vibes {
+  border: 1px solid white;
+  padding: 10px;
+  text-align: center;
+  height: 575px;
+  background-color: black;
+  overflow-x: scroll;
+}
+
+.vibes:hover {
+  border: 1px solid #ccff00;
+}
+
+.leftbutterfly {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  margin-right: 50px;
+  width: 40px;
+}
+
+.rightbutterfly {
+  margin-left: 50px;
+  width: 40px;
+}
+
+.rainbow {
+  background-image: linear-gradient(to right, #ffadad, #ffd6a5, #fdffb6, #caffbf, #96f6ff, #a0c4ff, #bdb2ff, #ffadad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-animation 100s linear infinite;
+}
+
+@keyframes rainbow-animation {
+  to {
+    background-position: 4500vh;
+  }
+}
+
+.coolgifs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.gifpadding {
+  padding: 5px;
+}
+
+/* VW BUS PAGE */
+.busheading {
+  text-align: center;
+  width: 450px;
+  margin-top: 10px;
+}
+
+.timeline-list {
+  text-align: left;
+  list-style-type: "✿ ";
+}
+
+.bus-image-container {
+  display: flex;
+  align-items: center;
+  width: 640px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 0 auto;
+}
+
+.restoration-img {
+  height: 200px;
+  margin-right: 20px;
+  border: 1px solid black;
+}
+
+.restoration-img:hover {
+  border: 1px solid #ccff00;
+}
+
+/* STWABEWWY PAGE */
+.stwabewwyheading {
+  text-align: center;
+  width: 500px;
+  margin-top: 10px;
+}
+
+.ipodminiimg {
+  width: 120px;
+  margin: 0;
+  padding: 0;
+}
+
+.rightsideimg {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 640px;
+  gap: 40px;
+}
+
+/* SHRINES PAGE */
+.shrinesheading {
+  text-align: center;
+  width: 150px;
+  margin-top: 10px;
+}
+
+.shrinelink {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+.shrinelink:hover {
+  color: #ccff00;
+}
+
+.leftstar {
+  display: inline-block;
+  -webkit-transform: scale(-1, -1);
+  -moz-transform: scale(-1, -1);
+  -o-transform: scale(-1, -1);
+  transform: scale(-1, -1);
+  margin-right: 50px;
+}
+
+.rightstar {
+  margin-left: 50px;
+}
+
+/* CAMERA COLECTION PAGE */
+.camerasheading {
+  text-align: center;
+  width: 250px;
+  margin-top: 10px;
+}
+
+.camera-border {
+  height: 30px;
+}
+
+.camera-container {
+  display: flex;
+  width: 650px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.camera-img {
+  max-width: 180px;
+  max-height: 180px;
+}
+
+a .camera-img:hover {
+  -webkit-filter: drop-shadow(0px 0px 20px rgba(204, 255, 0, 1));
+  filter: drop-shadow(0px 0px 20px rgba(204, 255, 0, 1));
+}
+
+/* COLLECTIONS PAGE */
+.collectionsheading {
+  text-align: center;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.collections-link {
+  color: white;
+}
+
+.blinkiesheader {
+  width: 130px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.buttonsheader {
+  width: 130px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.gifsheader {
+  width: 70px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.stampsheader {
+  width: 130px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.extrabottom {
+  margin-bottom: 20px;
+}
+
+.centercollections {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url("../images/multi022.jpg");
+  border: 8px double white;
+  border-radius: 20px;
+  padding-bottom: 20px;
+}
+
+.collection-box {
+  min-height: 653.5px;
+}
+
+.centerdiv {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.centerdiv a p:hover {
+  color: #ccff00;
+}
+
+.backlink {
+  color: #573946;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.centerstamps {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.crt::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+}
+.crt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+.crt {
+  animation: textShadow 1.6s infinite;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*#CONTAINER is the rectangle that contains everything but the background!*/
+#container {
+  margin: 0 auto;
+  width: 100%;
+  /* max-width: 1100px; */
+  background-color: black;
+  color: white;
+  /* outline-color: white;
+    outline-style: ridge;
+    outline-width: 4px;
+    outline-offset: 0; */
+}
+
+/* #content {
+    padding: 10px 5% 20px 5%;
+  } */
+
+/*HEADER STYLE*/
+#header {
+  /* background-color: #384879; */
+  /* background-image: url("../../images/multi022.jpg"); */
+  padding: 0 5%;
+  border-color: white;
+  border-radius: 10px 10px 0 0;
+  /* border-style: ridge;
+    border-width: 0 0 4px 0; */
+  text-align: center;
+  font-weight: bold;
+}
+#header ul {
+  list-style-type: none;
+  padding: 0.5em 0;
+  margin: 0;
+  text-align: center;
+}
+#header li {
+  font-size: 1.2em;
+  display: inline-block;
+  margin-right: 1.5em;
+  margin-left: 1.5em;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+}
+#header li a {
+  color: white;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid white;
+  background-color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#header li a:hover {
+  border: 1px solid #ccff00;
+  color: #ccff00;
+}
+
+/*POST LIST STYLE*/
+#postlistdiv ul {
+  font-size: 1.2em;
+  padding: 0;
+  list-style-type: ">> ";
+  width: 600px;
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+}
+#postlistdiv ul li:hover {
+  color: #ccff00;
+}
+
+#recentpostlistdiv ul {
+  font-size: 1.2em;
+  padding: 0;
+  list-style-type: ">> ";
+  width: 600px;
+  display: block;
+  margin: 0 auto;
+  color: white;
+}
+
+#recentpostlistdiv {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#recentpostlistdiv ul li:hover {
+  color: #ccff00;
+}
+
+/* #recentpostlistdiv2 ul li::marker {
+  color: white;
+} */
+/* #postlistdiv2 ul li::marker {
+  color: white;
+} */
+
+#recentpostlistdiv h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.moreposts {
+  font-size: 0.8em;
+  margin-top: 0.2em;
+}
+
+/*NEXT AND PREVIOUS LINKS STYLE*/
+#nextprev {
+  text-align: center;
+  margin-top: 1.4em;
+}
+
+/*DISQUS STYLE*/
+#disqus_thread {
+  margin-top: 1.6em;
+}
+
+/*FOOTER STYLE*/
+#footer {
+  font-size: 0.8em;
+  padding: 0 5% 10px 5%;
+  /* background-image: url("../../images/multi022.jpg"); */
+  border-radius: 0 0 10px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ccff00;
+  cursor: pointer;
+}
+
+.blog-oops {
+  height: 653.5px;
+}
+
+#postDate {
+  margin-top: 0;
+}
+
+.not-found {
+  height: 653.5px;
+}
+
+.obsessions-box {
+  min-height: 371px;
+}
+
+.recent-posts-box {
+  min-height: 279px;
+}
+
+.archive-box {
+  min-height: 653.5px;
+}
+
+.blog-box {
+  min-height: 653.5px;
+}
+
+.resource-list {
+  text-align: left;
+  list-style-type: ">> ";
+}
+
+.resource-buttons {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+#statuscafe-content:hover {
+  color: white;
+}
+
+/* unused stuff i dont wanna get rid of yet */
+
+/* text-shadow: 2px 2px 5px black; */
+
+/* .links {
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 4px dashed white;
+} */
+
+/* .mainnavimg {
+  height: 30px;
+  padding: 10px;
+  padding-right: 20px;
+} */
+
+/* INDEX PAGE
+.indexmain {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #ffedf5;
+  padding: 20px;
+}
+
+.contentindex {
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  background-image: url("../images/multi022.jpg");
+  border: 7px double white;
+  border-radius: 0px 0px 30px 30px;
+}
+
+.headerindex {
+  width: 900px;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-align: center;
+  background-image: url("../images/multi022.jpg");
+  border: 7px double white;
+  border-radius: 30px 30px 0px 0px;
+  position: relative;
+}
+
+.helloindexheading {
+  width: 400px;
+}
+
+.indexenter {
+  color: #5e81c6;
+  text-decoration: none;
+  border: 3px dashed white;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+}
+
+.everythingindex {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+
+.nekoindex {
+  margin-top: 25px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+} */
+/* 
+.mepng {
+  width: 200px;
+  border-radius: 10px;
+  border: 4px solid white;
+} */

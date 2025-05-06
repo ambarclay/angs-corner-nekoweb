@@ -1,0 +1,239 @@
+html {
+  cursor: url("../shrines/images/omori\ cursor.png"), default;
+}
+
+body {
+  background-color: black;
+  font-family: "Gaegu", sans-serif;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 20px;
+  text-align: center;
+}
+
+.main {
+  height: 98vh;
+  overflow-x: auto;
+}
+
+.header {
+  position: relative;
+}
+
+.content {
+  width: 1000px;
+  margin: 0 auto;
+  border: 3px solid white;
+}
+
+.scrollarrowright {
+  position: absolute;
+  top: 125%;
+  left: 110%;
+  width: 50px;
+  animation: floatUpDown 2s ease-in-out infinite;
+}
+
+.scrollarrowleft {
+  position: absolute;
+  top: 125%;
+  left: -20%;
+  width: 50px;
+  animation: floatUpDown 2s ease-in-out infinite;
+}
+
+.backarrow {
+  position: absolute;
+  width: 50px;
+  top: 0%;
+  left: -55%;
+  animation: floatLeftRight 1s ease-in-out infinite;
+}
+
+.header {
+  background-image: url("../shrines/images/basil.gif");
+  background-size: contain;
+  height: 600px;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.textbox {
+  width: 700px;
+  position: absolute;
+  left: 1%;
+  top: 70%;
+}
+
+.spacebetweensections {
+  height: 30px;
+}
+
+.spacebetweenheader {
+  height: 400px;
+}
+
+.writing {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.blackspaceimg {
+  width: 400px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.description {
+  width: 600px;
+  margin: 0 auto;
+  border: 4px double white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.select {
+  width: 35px;
+  padding: 0;
+  margin: 0;
+}
+
+.spriteborder {
+  width: 900px;
+  text-align: center;
+}
+
+.sprite {
+  width: 50px;
+}
+
+.hands {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.lefthand {
+  width: 60px;
+  transform: rotate(270deg);
+  animation: floatLeftRight-left 1s ease-in-out infinite;
+}
+
+.righthand {
+  width: 60px;
+  transform: rotate(90deg);
+  animation: floatLeftRight 1s ease-in-out infinite;
+}
+
+.imagesdiv {
+  display: flex;
+  align-items: center;
+  width: 900px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.landscape {
+  width: 800px;
+  margin-bottom: 20px;
+}
+
+.square {
+  width: 800px;
+  margin-bottom: 20px;
+}
+
+.verybottom {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatLeftRight {
+  0% {
+    transform: rotate(90deg) translateY(0);
+  }
+  50% {
+    transform: rotate(90deg) translateY(-10px);
+  }
+  100% {
+    transform: rotate(90deg) translateY(0);
+  }
+}
+
+@keyframes floatLeftRight-left {
+  0% {
+    transform: rotate(270deg) translateY(0);
+  }
+  50% {
+    transform: rotate(270deg) translateY(-10px);
+  }
+  100% {
+    transform: rotate(270deg) translateY(0);
+  }
+}
+
+.crt::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+}
+.crt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+.crt {
+  animation: textShadow 1.6s infinite;
+}

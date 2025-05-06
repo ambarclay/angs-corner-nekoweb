@@ -1,0 +1,195 @@
+html {
+  cursor: url("../shrines/images/normal.png"), default;
+}
+
+body {
+  background-image: url("../shrines/images/tgcfbackground.png");
+}
+
+h1 {
+  font-family: "Lavishly Yours", serif;
+  font-size: 60px;
+  text-align: center;
+  color: #e4e4e4;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Lexend", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  color: #e4e4e4;
+  padding: 0;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+p {
+  color: #e4e4e4;
+  font-family: "Lexend", sans-serif;
+}
+
+ul {
+  color: #e4e4e4;
+  font-family: "Lexend", sans-serif;
+  list-style-type: "⋆˙⟡ ";
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #cc504e;
+  text-decoration: none;
+}
+
+blockquote {
+  color: #cc504e;
+  font-family: "Lexend", sans-serif;
+  font-style: italic;
+}
+
+.center {
+  text-align: center;
+}
+
+.centerimg {
+  display: block;
+  margin: auto;
+}
+
+.content {
+  width: 1000px;
+  margin: 0 auto;
+  border: 10px double #8b0300;
+  border-radius: 30px;
+  background-color: black;
+}
+
+.scrollarrowright {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 85%;
+  left: 82%;
+  width: 90px;
+}
+
+.scrollarrowleft {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 85%;
+  left: 12%;
+  width: 90px;
+}
+
+.backarrow {
+  transform: rotate(180deg);
+  position: absolute;
+  width: 90px;
+  top: 2%;
+  left: 1%;
+}
+
+.header {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 40%),
+    url("/shrines/images/xie-lian-lantern.gif"), no-repeat;
+  background-size: contain;
+  height: 570px;
+  border-radius: 20px 20px 0 0;
+}
+
+.headertitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.starborder {
+  width: 500px;
+  text-align: center;
+}
+
+.top {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bottom {
+  margin-bottom: 20px;
+}
+
+.titlebutterfly {
+  width: 90px;
+  margin: 0;
+  padding: 0;
+}
+
+.spacebetweensections {
+  height: 30px;
+}
+
+.extratopspace {
+  margin-top: 40px;
+}
+
+.writing {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.description {
+  border: 2px dashed white;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hr-img {
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.character-description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.xielianimg {
+  height: 450px;
+}
+
+.huachengimg {
+  height: 450px;
+  margin-right: 20px;
+}
+
+.img-div {
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.landscape-img {
+  width: 800px;
+  margin: 20px;
+  border-radius: 50px;
+  border: 4px double white;
+}
+
+.portrait-img {
+  height: 500px;
+  margin: 20px;
+  border-radius: 50px;
+  border: 4px double white;
+}
+
+.verybottom {
+  font-family: "Lexend", sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}

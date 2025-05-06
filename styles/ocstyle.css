@@ -1,0 +1,113 @@
+html {
+  cursor: default;
+}
+
+body {
+  background-image: url("/images/yellowbg.jpg");
+  font-family: "Chicle", sans-serif;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li {
+  font-size: 18px;
+}
+
+hr {
+  width: 900px;
+  color: transparent;
+  border-top: 3px solid #e8b533;
+}
+
+.main {
+  width: 1100px;
+  margin: 0 auto;
+  background-color: #fef8b7;
+  border: 11px double #e8b533;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.header {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.oc-img {
+  width: 250px;
+}
+
+.kenta {
+  width: 200px;
+}
+
+.description {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.collection {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.character-info {
+  width: 500px;
+}
+
+.spacebetween {
+  height: 20px;
+}
+
+.character-info2 {
+  width: 550px;
+}
+
+.images {
+  width: 200px;
+}
+
+.center {
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.center img {
+  width: 200px;
+}
+
+.verybottom {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.back-link {
+  margin-top: 20px;
+  margin-left: 20px;
+  color: black;
+}
