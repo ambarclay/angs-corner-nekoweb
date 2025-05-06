@@ -321,9 +321,10 @@ button:hover {
 .gifheading {
   position: absolute;
   height: 75px;
-  top: 80%;
+  top: 94.5%;
   left: 66%;
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
 .welcomePost {
   text-align: center;

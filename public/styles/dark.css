@@ -73,12 +73,13 @@ button:hover {
 
 .header h1 {
   position: absolute;
-  top: 30px;
+  top: 45px;
   left: 46%;
   width: 400px;
   text-align: center;
   color: var(--text);
   font-size: 70px;
+  z-index: 1;
 }
 
 .header h1:hover {
