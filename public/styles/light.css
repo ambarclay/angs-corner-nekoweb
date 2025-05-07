@@ -229,6 +229,11 @@ textarea {
   border: 1px solid var(--hilight);
 }
 
+.visitnumber {
+  font-family: monospace;
+  font-size: 20px;
+}
+
 .style-changer {
   border: 1px solid var(--text);
   border-radius: 5px;
