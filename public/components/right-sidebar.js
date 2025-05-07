@@ -20,7 +20,6 @@ class RightSidebar extends HTMLElement {
           <featured-component></featured-component>
         </div>
         <tamanotchi-component></tamanotchi-component>
-        <visitors-component></visitors-component>
         <blinkie-scroll class="theme-1"></blinkie-scroll>
         <div class="side-box find-me">
         <img src="/images/links.gif" class="sidebarHeading theme-1" />

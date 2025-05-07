@@ -229,9 +229,11 @@ textarea {
   border: 1px solid var(--hilight);
 }
 
-.visitnumber {
-  font-family: monospace;
-  font-size: 20px;
+.visitcount {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
 }
 
 .style-changer {
@@ -373,6 +375,9 @@ button:hover {
   .green-hover {
     color: var(--hilight);
   }
+  .about-heading {
+    color: var(--text);
+  }
 }
 
 .welcomePost p,
@@ -400,10 +405,11 @@ marquee img {
 
 .facts {
   display: flex;
-  width: 680px;
+  width: 560px;
   text-align: left;
   flex-wrap: wrap;
   padding: 10px;
+  padding-right: 0;
 }
 
 .abitaboutme {
@@ -439,6 +445,18 @@ marquee img {
 
 .funfacts {
   margin-bottom: 13px;
+}
+
+.marin-kitagawa {
+  height: 380px;
+  margin-left: -40px;
+}
+
+.about-me-main-pg {
+  display: flex;
+  width: 690px;
+  align-items: start;
+  padding-left: 10px;
 }
 
 .welcomePost h3 {
@@ -729,10 +747,30 @@ marquee img {
   text-align: center;
 }
 
+.webrings:hover {
+  color: var(--text);
+}
+
+.webrings-heading {
+  width: 170px;
+  margin-top: 10px;
+}
+
+.webrings-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 600px;
+  gap: 10px;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
 .foot {
   margin: 0 auto;
   text-align: center;
-  margin-top: 55px;
+  margin-top: 0px;
 }
 
 /* ABOUT PAGE */
@@ -1262,7 +1300,7 @@ a:hover {
 }
 
 .resource-buttons {
-  width: 60%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-around;

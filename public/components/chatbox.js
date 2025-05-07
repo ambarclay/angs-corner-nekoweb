@@ -12,7 +12,7 @@ class Chatbox extends HTMLElement {
             <iframe
               src="https://www3.cbox.ws/box/?boxid=3546353&boxtag=nqIyk8"
               width="100%"
-              height="228"
+              height="294"
               allowtransparency="yes"
               allow="autoplay"
               frameborder="0"

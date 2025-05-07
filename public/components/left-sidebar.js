@@ -55,17 +55,15 @@ class LeftSidebar extends HTMLElement {
         </div>
         <button-scroll class="theme-1"></button-scroll>
         <div class="side-box">
-          <img class="sidebarHeading theme-1" src="/images/navlink.gif" />
-          <p class="box-title theme-2">navlink</p>
+          <img class="sidebarHeading theme-1" src="/images/nekolink.gif" />
+          <p class="box-title theme-2">nekolink</p>
           <div class="navlinkbox">
-            <iframe
-              class="navlinkads"
-              width="180"
-              height="180"
-              style="border: none"
-              src="https://dimden.neocities.org/navlink/"
-              name="neolink"
-              ></iframe>
+            <iframe 
+              width="160" 
+              height="160" 
+              style="border:none" 
+              src="https://rubybulbs.net/neko.html">
+            </iframe>
           </div>
         </div>
       </div>
