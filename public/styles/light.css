@@ -1771,6 +1771,10 @@ a.logo {
     max-width: 250px;
   }
 
+  #OCverse {
+    max-width: 250px;
+  }
+
   /* ABOUT PAGE */
   .leftbutterfly {
     display: none;
