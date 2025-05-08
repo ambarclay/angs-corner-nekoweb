@@ -1394,6 +1394,10 @@ a.logo {
   display: none;
 }
 
+#OCverse {
+  padding: 15px;
+}
+
 /* RESPONSIVENESS */
 @media only screen and (max-width: 1440px) {
   .link-back {
@@ -1666,6 +1670,16 @@ a.logo {
     max-width: 400px;
   }
 
+  .webring-prev > a > img {
+    width: 60px;
+  }
+  .webring-info > img {
+    width: 130px;
+  }
+  .webring-next > a > img {
+    width: 60px;
+  }
+
   /* RESOURCES PAGE */
   .resource-buttons {
     flex-wrap: wrap;
@@ -1769,6 +1783,20 @@ a.logo {
 
   .webrings-container img {
     max-width: 250px;
+  }
+
+  #OCverse {
+    padding: 0;
+  }
+
+  .webring-prev > a > img {
+    width: 40px;
+  }
+  .webring-info > img {
+    width: 90px;
+  }
+  .webring-next > a > img {
+    width: 40px;
   }
 
   /* ABOUT PAGE */
