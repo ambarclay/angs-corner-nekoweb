@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=VT323&family=Gaegu&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="/components/header.js" type="text/javascript" defer></script>
     <script src="/components/navbar.js" type="text/javascript" defer></script>
     <script src="/components/changelog.js" type="text/javascript" defer></script>
@@ -18,19 +19,31 @@
     <script src="/components/chatbox.js" type="text/javascript" defer></script>
     <script src="/components/left-sidebar.js" type="text/javascript" defer></script>
     <script src="/components/right-sidebar.js" type="text/javascript" defer></script>
+    <script src="/components/mobiletopnav.js" type="text/javascript" defer></script>
     <script>
       (function () {
         let savedTheme = localStorage.getItem("theme") || "/styles/light.css";
         document.write(`<link id="theme-stylesheet" rel="stylesheet" type="text/css" media="all" href="${savedTheme}">`);
       })();
     </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
     <title>stamps!</title>
   </head>
   <body onload="loadTheme()">
     <div class="crt theme-2"></div>
-    <header-component></header-component>
+    <mobile-nav-component></mobile-nav-component>
+    <header-component id="header-component"></header-component>
     <div class="content">
-      <left-sidebar-component></left-sidebar-component>
+      <left-sidebar-component id="left-sidebar-component"></left-sidebar-component>
       <div class="main">
         <div class="welcomePost side-box collection-box" style="margin-top: 0">
           <img src="../images/stamps.gif" style="margin-bottom: 15px; margin-top: 15px; height: 40px" class="theme-1" />
@@ -68,11 +81,11 @@
           <img src="../images/stamps/tumblr_96f6fe9c2e4879d76c5ce1457c9e100f_eb3b6acc_500.gif" />
           <img src="../images/stamps/tumblr_inline_pe6lvyKkO11v11djx_540.gif" />
           <div class="centerdiv">
-            <a href="/collections.html"><p style="text-align: center"><- back to collections</p></a>
+            <a href="/collections.html"><p style="text-align: center" class="back-to-collections"><- back to collections</p></a>
           </div>
         </div>
       </div>
-      <right-sidebar-component></right-sidebar-component>
+      <right-sidebar-component id="right-sidebar-component"></right-sidebar-component>
     </div>
     <div class="bottom">
       <div class="visitcount">

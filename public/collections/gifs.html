@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=VT323&family=Gaegu&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="/components/header.js" type="text/javascript" defer></script>
     <script src="/components/navbar.js" type="text/javascript" defer></script>
     <script src="/components/changelog.js" type="text/javascript" defer></script>
@@ -18,71 +19,85 @@
     <script src="/components/chatbox.js" type="text/javascript" defer></script>
     <script src="/components/left-sidebar.js" type="text/javascript" defer></script>
     <script src="/components/right-sidebar.js" type="text/javascript" defer></script>
+    <script src="/components/mobiletopnav.js" type="text/javascript" defer></script>
     <script>
       (function () {
         let savedTheme = localStorage.getItem("theme") || "/styles/light.css";
         document.write(`<link id="theme-stylesheet" rel="stylesheet" type="text/css" media="all" href="${savedTheme}">`);
       })();
     </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
     <title>gifs!</title>
   </head>
   <body onload="loadTheme()">
     <div class="crt theme-2"></div>
-    <header-component></header-component>
+    <mobile-nav-component></mobile-nav-component>
+    <header-component id="header-component"></header-component>
     <div class="content">
-      <left-sidebar-component></left-sidebar-component>
+      <left-sidebar-component id="left-sidebar-component"></left-sidebar-component>
       <div class="main">
         <div class="welcomePost side-box collection-box" style="margin-top: 0">
           <img src="../images/gifs.gif" style="margin-bottom: 0; margin-top: 15px; height: 45px" class="theme-1" />
           <h2 class="green-hover theme-2" style="text-align: center">gifs</h2>
           <br />
-          <img src="../images/gifs/amused.gif" />
-          <img src="../images/gifs/cheerful.gif" />
-          <img src="../shrines/images/butterfly.gif" style="width: 80px" />
-          <img src="../shrines/images/red hand select.gif" style="width: 60px" />
-          <img src="../images/gifs/apple.gif" />
-          <img src="../images/gifs/Music001.gif" />
-          <img src="../images/gifs/cd6.gif" />
-          <img src="../images/gifs/mmusic.gif" />
-          <img src="../images/gifs/blobkiss.gif" />
-          <img src="../images/gifs/bcute_happy.gif" />
-          <img src="../images/gifs/blobeating.gif" />
-          <img src="../images/gifs/catcute.gif" />
-          <img src="../images/gifs/CHIBITOTORO.gif" />
-          <img src="../images/gifs/cute.gif" />
-          <img src="../images/gifs/flower2.gif" />
-          <img src="../images/gifs/GK011.gif" />
-          <img src="../images/gifs/heart21.gif" />
-          <img src="../images/gifs/kawaii.gif" />
-          <img src="../images/gifs/kil.gif" />
-          <img src="../images/gifs/blobsparkleline.gif" />
-          <img src="../images/gifs/pinkline.gif" />
-          <img src="../images/gifs/colorline.gif" />
-          <img src="../images/gifs/stard.gif" />
-          <img src="../images/gifs/line.gif" />
-          <img src="../images/gifs/line0074.gif" />
-          <img src="../images/gifs/stars01.gif" />
-          <img src="../images/gifs/line4.gif" />
-          <img src="../images/gifs/logo1.gif" />
-          <img src="../images/gifs/peace_1s.gif" />
-          <img src="../images/gifs/pikachu.gif" />
-          <img src="../images/gifs/pin1.gif" />
-          <img src="../images/gifs/pinkbutterfly.gif" />
-          <img src="../images/gifs/playstation.gif" />
-          <img src="../images/gifs/sad.gif" />
-          <img src="../images/gifs/sad2.gif" />
-          <img src="../images/gifs/segalogo.gif" />
-          <img src="../images/gifs/star1.gif" />
-          <img src="../images/gifs/ipodspin.gif" style="width: 90px" />
-          <img src="../images/gifs/neko.gif" />
-          <img src="../images/gifs/vw_spin.gif" />
-          <img src="../images/gifs/gameboy.gif" />
+          <div class="gif-collection-box">
+            <img src="../images/gifs/amused.gif" />
+            <img src="../images/gifs/cheerful.gif" />
+            <img src="../shrines/images/butterfly.gif" style="width: 80px" />
+            <img src="../shrines/images/red hand select.gif" style="width: 60px" />
+            <img src="../images/gifs/apple.gif" />
+            <img src="../images/gifs/Music001.gif" />
+            <img src="../images/gifs/cd6.gif" />
+            <img src="../images/gifs/mmusic.gif" />
+            <img src="../images/gifs/blobkiss.gif" />
+            <img src="../images/gifs/bcute_happy.gif" />
+            <img src="../images/gifs/blobeating.gif" />
+            <img src="../images/gifs/catcute.gif" />
+            <img src="../images/gifs/CHIBITOTORO.gif" />
+            <img src="../images/gifs/cute.gif" />
+            <img src="../images/gifs/flower2.gif" />
+            <img src="../images/gifs/GK011.gif" />
+            <img src="../images/gifs/heart21.gif" />
+            <img src="../images/gifs/kawaii.gif" />
+            <img src="../images/gifs/kil.gif" />
+            <img src="../images/gifs/blobsparkleline.gif" />
+            <img src="../images/gifs/pinkline.gif" />
+            <img src="../images/gifs/colorline.gif" />
+            <img src="../images/gifs/stard.gif" />
+            <img src="../images/gifs/line.gif" />
+            <img src="../images/gifs/line0074.gif" />
+            <img src="../images/gifs/stars01.gif" />
+            <img src="../images/gifs/line4.gif" />
+            <img src="../images/gifs/logo1.gif" />
+            <img src="../images/gifs/peace_1s.gif" />
+            <img src="../images/gifs/pikachu.gif" />
+            <img src="../images/gifs/pin1.gif" />
+            <img src="../images/gifs/pinkbutterfly.gif" />
+            <img src="../images/gifs/playstation.gif" />
+            <img src="../images/gifs/sad.gif" />
+            <img src="../images/gifs/sad2.gif" />
+            <img src="../images/gifs/segalogo.gif" />
+            <img src="../images/gifs/star1.gif" />
+            <img src="../images/gifs/ipodspin.gif" style="width: 90px" />
+            <img src="../images/gifs/neko.gif" />
+            <img src="../images/gifs/vw_spin.gif" />
+            <img src="../images/gifs/gameboy.gif" />
+          </div>
           <div class="centerdiv">
-            <a href="/collections.html"><p style="text-align: center"><- back to collections</p></a>
+            <a href="/collections.html"><p style="text-align: center" class="back-to-collections"><- back to collections</p></a>
           </div>
         </div>
       </div>
-      <right-sidebar-component></right-sidebar-component>
+      <right-sidebar-component id="right-sidebar-component"></right-sidebar-component>
     </div>
     <div class="bottom">
       <div class="visitcount">

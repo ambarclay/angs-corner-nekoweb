@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=VT323&family=Gaegu&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://webring.nekoweb.org/onionring.css" />
     <link rel="stylesheet" href="https://zoranadragon.neocities.org/more/oc-webring/onionring.css" />
-    <link rel="stylesheet" href="https://crtstatic.nekoweb.org/dsring/onion/onionring.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="/components/header.js" type="text/javascript" defer></script>
     <script src="/components/navbar.js" type="text/javascript" defer></script>
     <script src="/components/changelog.js" type="text/javascript" defer></script>
@@ -21,19 +21,31 @@
     <script src="/components/chatbox.js" type="text/javascript" defer></script>
     <script src="/components/left-sidebar.js" type="text/javascript" defer></script>
     <script src="/components/right-sidebar.js" type="text/javascript" defer></script>
+    <script src="/components/mobiletopnav.js" type="text/javascript" defer></script>
     <script>
       (function () {
         let savedTheme = localStorage.getItem("theme") || "/styles/light.css";
         document.write(`<link id="theme-stylesheet" rel="stylesheet" type="text/css" media="all" href="${savedTheme}">`);
       })();
     </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
     <title>ang's corner!</title>
   </head>
   <body onload="loadTheme()">
     <div class="crt theme-2"></div>
-    <header-component></header-component>
+    <mobile-nav-component></mobile-nav-component>
+    <header-component id="header-component"></header-component>
     <div class="content">
-      <left-sidebar-component></left-sidebar-component>
+      <left-sidebar-component id="left-sidebar-component"></left-sidebar-component>
       <div class="main">
         <div class="welcomePost">
           <div class="welcome-title theme-1">
@@ -43,6 +55,17 @@
           </div>
           <h2 class="green-hover theme-2">>>welcome to my website</h2>
           <h3 class="bestviewed">(best viewed in firefox on a computer)</h3>
+          <div class="tablet-widgets tablet-clap">
+            <a
+              href="//clap.fc2.com/post/angieblah24/?url=https%3A%2F%2Fangs-corner.neocities.org&title=ang%27s+corner%21"
+              target="_blank"
+              title="Web Clap by FC2"
+              ><img
+                src="//clap.fc2.com/images/button/white/angieblah24?url=https%3A%2F%2Fangs-corner.neocities.org&amp;lang=en"
+                alt="Web Clap by FC2"
+                style="border: none"
+            /></a>
+          </div>
           <p>
             hello there everyone, i'm ang! thanks for stopping over to my little corner of the internet. this is just a place for me to put basically
             anything i want, think of it like all of my social media except it's one page that i coded on my own :D
@@ -57,6 +80,12 @@
             elaborate and there's probably mistakes everywhere (not to mention the code itself is a complete mess). i'm learning as i go and i hope to
             keep improving this page as i cram more info into my little brain.
           </p>
+
+          <div class="tamanotchi-tablet tablet-widgets">
+            <a href="https://tamanotchi.world/20263c"><img src="https://tamanotchi.world/i/20263" alt="It's tamaNOTchi! Click to feed!" /></a>
+            <a href="https://tamanotchi.world/20264c"><img src="https://tamanotchi.world/i/20264" alt="It's tamaNOTchi! Click to feed!" /></a>
+            <a href="https://tamanotchi.world/20265c"><img src="https://tamanotchi.world/i/20265" alt="It's tamaNOTchi! Click to feed!" /></a>
+          </div>
         </div>
         <marquee class="stampsScroll">
           <img src="./images/stamps/blog (4).gif" />
@@ -201,8 +230,15 @@
             </div>
           </div>
         </div>
+        <div class="extraspace"></div>
+        <div class="side-box tablet-widgets">
+          <div class="navlinkbox">
+            <iframe width="200" height="200" style="border: none" src="https://rubybulbs.net/neko.html"> </iframe>
+          </div>
+        </div>
+        <h3 style="text-align: center" class="tablet-widget-desktop">wanna see some more cool widgets like this? <br />view on a desktop!</h3>
       </div>
-      <right-sidebar-component></right-sidebar-component>
+      <right-sidebar-component id="right-sidebar-component"></right-sidebar-component>
     </div>
     <div class="bottom">
       <div class="visitcount">
@@ -210,7 +246,7 @@
         <script type="text/javascript" src="https://www.freevisitorcounters.com/auth.php?id=8b39515bb831f5378ca6fc9be2e3ce145605110f"></script>
         <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1337106/t/5"></script>
       </div>
-      <footer-component></footer-component>
+      <footer-component id="footer-component"></footer-component>
     </div>
     <script>
       function switchCSS() {

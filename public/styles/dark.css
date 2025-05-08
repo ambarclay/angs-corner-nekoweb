@@ -753,6 +753,7 @@ marquee img {
   margin: 0 auto;
   text-align: center;
   margin-top: 0px;
+  padding-bottom: 15px;
 }
 
 /* ABOUT PAGE */
@@ -951,17 +952,8 @@ marquee img {
   color: var(--hilight);
 }
 
-.leftstar {
-  display: inline-block;
-  -webkit-transform: scale(-1, -1);
-  -moz-transform: scale(-1, -1);
-  -o-transform: scale(-1, -1);
-  transform: scale(-1, -1);
-  margin-right: 50px;
-}
-
-.rightstar {
-  margin-left: 50px;
+.shrine-warning {
+  display: none;
 }
 
 /* CAMERA COLECTION PAGE */
@@ -1276,4 +1268,556 @@ a:hover {
   justify-content: space-around;
   margin: 0 auto;
   padding-top: 10px;
+}
+
+/* HAMBURGER MENU */
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  display: none;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  background-color: var(--boxtitle);
+}
+
+#myLinks a {
+  color: var(--text);
+  line-height: 10px;
+  border-bottom: 1px solid var(--text);
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+a.logo {
+  font-size: 30px;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: black;
+  color: var(--text);
+}
+
+.tabletbar {
+  display: none;
+}
+
+.tablet-widgets {
+  display: none;
+}
+
+.tablet-widget-desktop {
+  display: none;
+}
+
+/* RESPONSIVENESS */
+@media only screen and (max-width: 1440px) {
+  .link-back {
+    display: none;
+  }
+
+  .angy {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  #right-sidebar-component {
+    display: none;
+  }
+
+  .tabletbar {
+    display: block;
+  }
+
+  .fullscreen {
+    display: none;
+  }
+
+  .navbar {
+    height: auto;
+    overflow-x: visible;
+  }
+
+  .content {
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main {
+    width: 740px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: block;
+    height: auto;
+    overflow-x: visible;
+  }
+
+  /* NOT FOUND */
+  .not-found {
+    height: 999px;
+  }
+
+  /* SHRINES */
+  .obsessions-box {
+    min-height: 626.5px;
+  }
+
+  .shrine-warning {
+    display: block;
+  }
+
+  /* COLLECTIONS */
+  .collection-box {
+    min-height: 999px;
+  }
+
+  /* BLOG */
+  .recent-posts-box {
+    min-height: 623px;
+  }
+
+  .archive-box {
+    min-height: 999px;
+  }
+
+  .blog-oops {
+    min-height: 999px;
+  }
+
+  .blog-box {
+    min-height: 999px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  #left-sidebar-component {
+    display: none;
+  }
+
+  #right-sidebar-component {
+    display: none;
+  }
+
+  .header {
+    width: auto;
+    height: 90px;
+    margin: 0 auto;
+    position: initial;
+  }
+
+  .header h1 {
+    display: none;
+  }
+
+  .topnav {
+    display: initial;
+  }
+
+  .olruggio {
+    display: none;
+  }
+
+  /* INDEX */
+  .tablet-widgets {
+    width: 215px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+
+  .tablet-widget-desktop {
+    display: block;
+  }
+
+  .tamanotchi-tablet {
+    margin: 0 auto;
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 20px;
+  }
+
+  .tablet-clap {
+    padding-top: 10px;
+  }
+
+  /* NOT FOUND */
+  .not-found {
+    height: 80vh;
+  }
+
+  /* SHRINES */
+  .obsessions-box {
+    min-height: initial;
+    height: auto;
+  }
+
+  /* COLLECTIONS */
+  .collection-box {
+    min-height: initial;
+    height: auto;
+  }
+
+  /* BLOG */
+  .recent-posts-box {
+    min-height: 30vh;
+    height: auto;
+  }
+
+  .archive-box {
+    min-height: 50vh;
+    height: auto;
+  }
+
+  .blog-oops {
+    min-height: 50vh;
+    height: auto;
+  }
+
+  .blog-box {
+    min-height: 50vh;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .content {
+    max-width: 750px;
+    width: auto;
+  }
+
+  .welcomePost {
+    max-width: 600px;
+    width: auto;
+  }
+
+  .box-title-welcome {
+    left: 80px;
+  }
+
+  /* INDEX */
+  .marin-kitagawa {
+    display: none;
+  }
+
+  .favoriteslists {
+    max-width: 500px;
+  }
+
+  /* BUS PAGE */
+  .bus-image-container {
+    width: 75vw;
+  }
+
+  /* CAMERA PAGE */
+  .camera-container {
+    width: 80vw;
+  }
+
+  /* STWABEWWY PAGE */
+  .rightsideimg {
+    width: 590px;
+    align-items: center;
+  }
+
+  /* BLOG */
+  #recentpostlistdiv ul {
+    max-width: 500px;
+  }
+
+  #footer img {
+    width: 500px;
+  }
+
+  #postlistdiv ul {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 645px) {
+  .header {
+    height: 70px;
+  }
+
+  .content {
+    max-width: 500px;
+  }
+
+  .welcomePost {
+    max-width: 500px;
+  }
+
+  .box-title-welcome {
+    left: 30px;
+  }
+
+  /* INDEX */
+  .peacesign {
+    width: 30px;
+  }
+
+  .welcomeGif {
+    width: 300px;
+  }
+
+  .facts {
+    max-width: 400px;
+  }
+
+  .quickfacts {
+    margin: 0;
+  }
+
+  .morefavorites {
+    padding-top: 0;
+    padding-left: 139px;
+  }
+
+  .webrings-container {
+    max-width: 400px;
+  }
+
+  /* RESOURCES PAGE */
+  .resource-buttons {
+    flex-wrap: wrap;
+  }
+
+  /* STWABEWWY PAGE */
+  .rightsideimg {
+    width: 490px;
+  }
+
+  .stwabewwyheading {
+    width: 400px;
+  }
+
+  /* COLLECTIONS */
+  .gif-collection-box > img {
+    max-width: 400px;
+  }
+
+  /* BLOG */
+  #recentpostlistdiv ul {
+    max-width: 400px;
+  }
+
+  #footer {
+    display: none;
+  }
+
+  #postlistdiv ul {
+    width: 400px;
+  }
+
+  #postTitleH1-2 {
+    text-align: left;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  h3 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .header {
+    height: 70px;
+  }
+
+  .content {
+    max-width: 300px;
+  }
+
+  .welcomePost {
+    max-width: 300px;
+  }
+
+  .box-title-welcome {
+    left: 60px;
+  }
+
+  /* INDEX */
+  .abitaboutme h2 {
+    font-size: 25px;
+  }
+
+  .facts {
+    max-width: 250px;
+  }
+
+  .facts p {
+    padding-top: 10px;
+  }
+
+  .morefavorites {
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .webrings-container {
+    max-width: 250px;
+  }
+
+  .webrings-container img {
+    max-width: 250px;
+  }
+
+  /* ABOUT PAGE */
+  .bunnyline {
+    display: none;
+  }
+
+  .favoriteslists {
+    max-width: 250px;
+  }
+
+  .aboutmeinterests {
+    gap: 0;
+  }
+
+  /* BUS PAGE */
+  .busheading {
+    width: 300px;
+  }
+
+  .bus-image-container {
+    width: 300px;
+  }
+
+  .restoration-img {
+    height: 150px;
+  }
+
+  figure {
+    width: 300px;
+  }
+
+  figure img {
+    width: 250px !important;
+  }
+
+  .rainbowline {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .rainbowline img {
+    width: 320px;
+  }
+
+  /* CAMERA PAGE */
+  .camerasheading {
+    width: 200px;
+  }
+
+  .camera-container {
+    width: 250px;
+    gap: 0;
+  }
+
+  .camera-img {
+    height: 90px;
+  }
+
+  /* SHRINES */
+  .shrinelink {
+    font-size: 25px;
+  }
+
+  /* STWABEWWY PAGE */
+  .ipodminiimg {
+    width: 100px !important;
+  }
+  .rightsideimg {
+    width: 300px;
+    flex-direction: column-reverse;
+    gap: 0;
+    padding-top: 10px;
+  }
+
+  .rightsideimg figure {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .spotify-article {
+    width: auto;
+  }
+
+  .stwabewwyheading {
+    width: 300px;
+  }
+
+  /* COLLECTIONS */
+  .back-to-collections {
+    width: 300px;
+  }
+
+  .gif-collection-box > img {
+    max-width: 300px;
+  }
+
+  /* BLOG */
+  #header ul li {
+    margin: 10px;
+  }
+
+  #recentpostlistdiv ul {
+    max-width: 220px;
+    font-size: 16px;
+  }
+
+  #postlistdiv ul {
+    width: 220px;
+    font-size: 16px;
+  }
+
+  #postTitleH1-2 {
+    text-align: left;
+    font-size: 25px;
+  }
+
+  #postDate {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }
