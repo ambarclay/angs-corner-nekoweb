@@ -1394,10 +1394,6 @@ a.logo {
   display: none;
 }
 
-.OCverse-small {
-  display: none;
-}
-
 /* RESPONSIVENESS */
 @media only screen and (max-width: 1440px) {
   .link-back {
@@ -1668,14 +1664,6 @@ a.logo {
 
   .webrings-container {
     max-width: 400px;
-  }
-
-  .OCverse-small {
-    display: initial;
-  }
-
-  .OCverse-large {
-    display: none;
   }
 
   /* RESOURCES PAGE */
