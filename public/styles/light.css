@@ -458,7 +458,7 @@ marquee img {
 
 .about-me-main-pg {
   display: flex;
-  width: 690px;
+  /* width: 690px; */
   align-items: start;
   padding-left: 10px;
 }
