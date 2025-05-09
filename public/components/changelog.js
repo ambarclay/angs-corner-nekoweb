@@ -8,6 +8,9 @@ class Changelog extends HTMLElement {
         <div class="changelog">
           <div class="changelogposts">
             <p>
+              <span class="hilight"><b>5/9/25:</b></span> fixed crt effect on mobile
+            </p>
+            <p>
               <span class="hilight"><b>5/8/25:</b></span> site is now responsive (kinda)
             </p>
             <p>
