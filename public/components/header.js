@@ -8,12 +8,14 @@ class Header extends HTMLElement {
         <div class="header theme-1">
             <img class="gifheading" src="/images/angs-corner-heading.gif" />
             <a href="https://www.youtube.com/@angieblah245" target="_blank"><img class="angy" src="/images/angy.png" /></a>
+            <img src="/images/olruggio.png" class="olruggio"/>
         </div>
         <div class="header theme-2">
             <h1>>>ang's corner</h1>
             <a href="https://www.youtube.com/@angieblah245" target="_blank"><img class="angy" src="/images/angy.png" /></a>
+            <img src="/images/olruggio.png" class="olruggio"/>
         </div>
-        <img src="/images/olruggio.png" class="olruggio"/>
+        
         <div class="link-back">
           <img src="/images/link-me.gif" class="sidebarHeading theme-1" />
           <p class="box-title theme-2">link to my site</p>

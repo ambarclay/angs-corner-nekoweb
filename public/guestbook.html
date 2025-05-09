@@ -40,27 +40,29 @@
   </head>
   <body onload="loadTheme()">
     <div class="crt theme-2"></div>
-    <mobile-nav-component></mobile-nav-component>
-    <header-component id="header-component"></header-component>
-    <div class="content">
-      <left-sidebar-component id="left-sidebar-component"></left-sidebar-component>
-      <div class="main">
-        <div class="welcomePost">
-          <img class="guestbook-heading theme-1" src="/images/guestbook-heading.gif" />
-          <h2 class="green-hover theme-2">>>guestbook</h2>
-          <div class="extraspace"></div>
-          <iframe src="http://users3.smartgb.com/g/g.php?a=s&i=g36-38350-af" id="guestbook-frame" title="guestbook"></iframe>
+    <div class="scroll-mobile">
+      <mobile-nav-component></mobile-nav-component>
+      <header-component id="header-component"></header-component>
+      <div class="content">
+        <left-sidebar-component id="left-sidebar-component"></left-sidebar-component>
+        <div class="main">
+          <div class="welcomePost">
+            <img class="guestbook-heading theme-1" src="/images/guestbook-heading.gif" />
+            <h2 class="green-hover theme-2">>>guestbook</h2>
+            <div class="extraspace"></div>
+            <iframe src="http://users3.smartgb.com/g/g.php?a=s&i=g36-38350-af" id="guestbook-frame" title="guestbook"></iframe>
+          </div>
         </div>
+        <right-sidebar-component id="right-sidebar-component"></right-sidebar-component>
       </div>
-      <right-sidebar-component id="right-sidebar-component"></right-sidebar-component>
-    </div>
-    <div class="bottom">
-      <div class="visitcount">
-        <a href="https://www.free-counters.org/">free-counters.org</a>
-        <script type="text/javascript" src="https://www.freevisitorcounters.com/auth.php?id=8b39515bb831f5378ca6fc9be2e3ce145605110f"></script>
-        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1337106/t/5"></script>
+      <div class="bottom">
+        <div class="visitcount">
+          <a href="https://www.free-counters.org/">free-counters.org</a>
+          <script type="text/javascript" src="https://www.freevisitorcounters.com/auth.php?id=8b39515bb831f5378ca6fc9be2e3ce145605110f"></script>
+          <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1337106/t/5"></script>
+        </div>
+        <footer-component></footer-component>
       </div>
-      <footer-component></footer-component>
     </div>
     <script>
       function switchCSS() {

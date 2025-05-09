@@ -40,71 +40,73 @@
   </head>
   <body onload="loadTheme()">
     <div class="crt theme-2"></div>
-    <mobile-nav-component></mobile-nav-component>
-    <header-component id="header-component"></header-component>
-    <div class="content">
-      <left-sidebar-component id="left-sidebar-component"></left-sidebar-component>
-      <div class="main">
-        <div class="welcomePost blog-box">
-          <div id="container">
-            <div id="content">
-              <div class="theme-2">
-                <div style="display: flex; align-items: center; justify-content: left; height: 40px">
-                  <h1 style="text-align: left" class="blog-h1 theme-2">>></h1>
-                  <h1 id="postTitleH1-2" class="green-hover theme-2"></h1>
+    <div class="scroll-mobile">
+      <mobile-nav-component></mobile-nav-component>
+      <header-component id="header-component"></header-component>
+      <div class="content">
+        <left-sidebar-component id="left-sidebar-component"></left-sidebar-component>
+        <div class="main">
+          <div class="welcomePost blog-box">
+            <div id="container">
+              <div id="content">
+                <div class="theme-2">
+                  <div style="display: flex; align-items: center; justify-content: left; height: 40px">
+                    <h1 style="text-align: left" class="blog-h1 theme-2">>></h1>
+                    <h1 id="postTitleH1-2" class="green-hover theme-2"></h1>
+                  </div>
                 </div>
+                <h1 id="postTitleH1" class="theme-1" style="font-size: 30px; margin-bottom: 0; padding-bottom: 0"></h1>
+                <h4 id="postDate"></h4>
+                <!-- <div id="header2">...</div> -->
+                <p>
+                  heyo, welcome to my super cool blog! i just wanted to write a little something to get this blog started out, so this post is mostly
+                  gonna be me rambling about my website.
+                </p>
+                <p>
+                  so the idea for this website had been in the back of my mind ever since i started to learn about web design and development around 2
+                  years ago. i had the super cool idea to make a website that had 2 themes: one that was just like a normal/ professional looking
+                  website, then you could click a button and it would change into a fun, windows 98 style theme. now, i know this website isn't
+                  exactly that, but i'd still say that it came out pretty cool.
+                </p>
+                <p>
+                  i've been learning html and css for around 4ish years on and off, but really began to get serious about it around a year ago when i
+                  decided to learn javascript too. i took an online web development course and it really reignighted my passion for coding and design,
+                  so much so that i'm actually gonna go back to school to learn it and change my whole career.
+                </p>
+                <p>
+                  originally i just started this site with the pink theme, but after looking at so many other neocities pages i thought the pink theme
+                  just looked too basic and boring and i really wanted to change everything, but also didn't wanna get rid of all the work i had
+                  already done. so i ended up cading this really convoluted theme switcher that i will definitely have to change at some point to make
+                  a lot better, but that is a problem for future ang.
+                </p>
+                <p>
+                  recently i've been trying to give up all of my social media in favor of doing more learning/ creative activities, so i hope that
+                  i'll be able to use this website instead of doomscrolling on reddit and instagram all of the time. i'm taking a class on python
+                  right now and really trying my best to not procrastinate with it (but now i'm procrastinating that by working on this oof).
+                </p>
+                <p>
+                  anyway, thats about all i wanted to say for this intro post. keep an eye out over here cause i'll be posting more about projects i'm
+                  working on, things going on in my life, and hopefully some of my creative writing too! see ya later
+                </p>
+                <p style="text-align: center">♥ ang</p>
+                <div id="nextprev"></div>
               </div>
-              <h1 id="postTitleH1" class="theme-1" style="font-size: 30px; margin-bottom: 0; padding-bottom: 0"></h1>
-              <h4 id="postDate"></h4>
-              <!-- <div id="header2">...</div> -->
-              <p>
-                heyo, welcome to my super cool blog! i just wanted to write a little something to get this blog started out, so this post is mostly
-                gonna be me rambling about my website.
-              </p>
-              <p>
-                so the idea for this website had been in the back of my mind ever since i started to learn about web design and development around 2
-                years ago. i had the super cool idea to make a website that had 2 themes: one that was just like a normal/ professional looking
-                website, then you could click a button and it would change into a fun, windows 98 style theme. now, i know this website isn't exactly
-                that, but i'd still say that it came out pretty cool.
-              </p>
-              <p>
-                i've been learning html and css for around 4ish years on and off, but really began to get serious about it around a year ago when i
-                decided to learn javascript too. i took an online web development course and it really reignighted my passion for coding and design,
-                so much so that i'm actually gonna go back to school to learn it and change my whole career.
-              </p>
-              <p>
-                originally i just started this site with the pink theme, but after looking at so many other neocities pages i thought the pink theme
-                just looked too basic and boring and i really wanted to change everything, but also didn't wanna get rid of all the work i had already
-                done. so i ended up cading this really convoluted theme switcher that i will definitely have to change at some point to make a lot
-                better, but that is a problem for future ang.
-              </p>
-              <p>
-                recently i've been trying to give up all of my social media in favor of doing more learning/ creative activities, so i hope that i'll
-                be able to use this website instead of doomscrolling on reddit and instagram all of the time. i'm taking a class on python right now
-                and really trying my best to not procrastinate with it (but now i'm procrastinating that by working on this oof).
-              </p>
-              <p>
-                anyway, thats about all i wanted to say for this intro post. keep an eye out over here cause i'll be posting more about projects i'm
-                working on, things going on in my life, and hopefully some of my creative writing too! see ya later
-              </p>
-              <p style="text-align: center">♥ ang</p>
-              <div id="nextprev"></div>
+              <!-- end of div id="content" -->
+              <div id="footer"></div>
             </div>
-            <!-- end of div id="content" -->
-            <div id="footer"></div>
+            <!-- end of div id="container" -->
           </div>
-          <!-- end of div id="container" -->
         </div>
+        <right-sidebar-component id="right-sidebar-component"></right-sidebar-component>
       </div>
-      <right-sidebar-component id="right-sidebar-component"></right-sidebar-component>
-    </div>
-    <div class="bottom">
-      <div class="visitcount">
-        <a href="https://www.free-counters.org/">free-counters.org</a>
-        <script type="text/javascript" src="https://www.freevisitorcounters.com/auth.php?id=8b39515bb831f5378ca6fc9be2e3ce145605110f"></script>
-        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1337106/t/5"></script>
+      <div class="bottom">
+        <div class="visitcount">
+          <a href="https://www.free-counters.org/">free-counters.org</a>
+          <script type="text/javascript" src="https://www.freevisitorcounters.com/auth.php?id=8b39515bb831f5378ca6fc9be2e3ce145605110f"></script>
+          <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1337106/t/5"></script>
+        </div>
+        <footer-component></footer-component>
       </div>
-      <footer-component></footer-component>
     </div>
     <script src="/blog/script.js"></script>
     <script>

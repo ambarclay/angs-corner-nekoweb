@@ -1075,7 +1075,7 @@ a .camera-img:hover {
   right: 0;
   background: rgba(18, 16, 16, 0.1);
   opacity: 0;
-  z-index: 2;
+  z-index: 3;
   pointer-events: none;
   animation: flicker 0.15s infinite;
 }
@@ -1089,7 +1089,7 @@ a .camera-img:hover {
   right: 0;
   background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
     linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-  z-index: 2;
+  z-index: 3;
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
 }
@@ -1387,6 +1387,11 @@ a.logo {
     display: block;
     height: auto;
     overflow-x: visible;
+  }
+
+  .scroll-mobile {
+    overflow-x: scroll;
+    height: 100vh;
   }
 
   /* NOT FOUND */
@@ -1847,5 +1852,12 @@ a.logo {
   #postDate {
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 270px) {
+  #postTitleH1-2 {
+    text-align: left;
+    font-size: 20px;
   }
 }

@@ -41,42 +41,44 @@
   </head>
   <body onload="loadTheme()">
     <div class="crt theme-2"></div>
-    <mobile-nav-component></mobile-nav-component>
-    <header-component id="header-component"></header-component>
-    <div class="content">
-      <left-sidebar-component id="left-sidebar-component"></left-sidebar-component>
-      <div class="main">
-        <div class="welcomePost blog-box">
-          <div id="container">
-            <div id="content">
-              <div class="theme-2">
-                <div style="display: flex; align-items: center; justify-content: left; height: 40px">
-                  <h1 style="text-align: left" class="blog-h1 theme-2">>></h1>
-                  <h1 id="postTitleH1-2" class="green-hover theme-2"></h1>
+    <div class="scroll-mobile">
+      <mobile-nav-component></mobile-nav-component>
+      <header-component id="header-component"></header-component>
+      <div class="content">
+        <left-sidebar-component id="left-sidebar-component"></left-sidebar-component>
+        <div class="main">
+          <div class="welcomePost blog-box">
+            <div id="container">
+              <div id="content">
+                <div class="theme-2">
+                  <div style="display: flex; align-items: center; justify-content: left; height: 40px">
+                    <h1 style="text-align: left" class="blog-h1 theme-2">>></h1>
+                    <h1 id="postTitleH1-2" class="green-hover theme-2"></h1>
+                  </div>
                 </div>
-              </div>
-              <h1 id="postTitleH1" class="theme-1" style="font-size: 30px; margin-bottom: 0; padding-bottom: 0"></h1>
-              <h4 id="postDate"></h4>
-              <!-- <div id="header2">...</div> -->
-              <p>Ready to write? Replace this text with your first paragraph!</p>
+                <h1 id="postTitleH1" class="theme-1" style="font-size: 30px; margin-bottom: 0; padding-bottom: 0"></h1>
+                <h4 id="postDate"></h4>
+                <!-- <div id="header2">...</div> -->
+                <p>Ready to write? Replace this text with your first paragraph!</p>
 
-              <div id="nextprev"></div>
+                <div id="nextprev"></div>
+              </div>
+              <!-- end of div id="content" -->
+              <div id="footer"></div>
             </div>
-            <!-- end of div id="content" -->
-            <div id="footer"></div>
+            <!-- end of div id="container" -->
           </div>
-          <!-- end of div id="container" -->
         </div>
+        <right-sidebar-component id="right-sidebar-component"></right-sidebar-component>
       </div>
-      <right-sidebar-component id="right-sidebar-component"></right-sidebar-component>
-    </div>
-    <div class="bottom">
-      <div class="visitcount">
-        <a href="https://www.free-counters.org/">free-counters.org</a>
-        <script type="text/javascript" src="https://www.freevisitorcounters.com/auth.php?id=8b39515bb831f5378ca6fc9be2e3ce145605110f"></script>
-        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1337106/t/5"></script>
+      <div class="bottom">
+        <div class="visitcount">
+          <a href="https://www.free-counters.org/">free-counters.org</a>
+          <script type="text/javascript" src="https://www.freevisitorcounters.com/auth.php?id=8b39515bb831f5378ca6fc9be2e3ce145605110f"></script>
+          <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1337106/t/5"></script>
+        </div>
+        <footer-component></footer-component>
       </div>
-      <footer-component></footer-component>
     </div>
     <script src="/blog/script.js"></script>
     <script>

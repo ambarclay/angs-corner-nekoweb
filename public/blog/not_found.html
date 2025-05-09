@@ -41,41 +41,43 @@
   </head>
   <body onload="loadTheme()">
     <div class="crt theme-2"></div>
-    <mobile-nav-component></mobile-nav-component>
-    <header-component id="header-component"></header-component>
-    <div class="content">
-      <left-sidebar-component id="left-sidebar-component"></left-sidebar-component>
-      <div class="main">
-        <div class="welcomePost blog-oops">
-          <div class="theme-1">
-            <div class="centerimg">
-              <img src="/images/gifs/sad.gif" style="margin-right: 140px" class="leftguy" />
-              <img class="oopsgif" src="/images/oops.gif" />
-              <img src="/images/gifs/sad2.gif" style="margin-left: 140px" class="rightguy" />
+    <div class="scroll-mobile">
+      <mobile-nav-component></mobile-nav-component>
+      <header-component id="header-component"></header-component>
+      <div class="content">
+        <left-sidebar-component id="left-sidebar-component"></left-sidebar-component>
+        <div class="main">
+          <div class="welcomePost blog-oops">
+            <div class="theme-1">
+              <div class="centerimg">
+                <img src="/images/gifs/sad.gif" style="margin-right: 140px" class="leftguy" />
+                <img class="oopsgif" src="/images/oops.gif" />
+                <img src="/images/gifs/sad2.gif" style="margin-left: 140px" class="rightguy" />
+              </div>
             </div>
-          </div>
-          <h2 class="green-hover theme-2">>>error</h2>
-          <div id="container">
-            <!-- Don't put content in "header" div! It will be replaced! If JavaScript is disabled, the following note will appear. -->
-            <div id="header">This site requires JavaScript!</div>
-            <div id="content">
-              <h1>page not found</h1>
-              <p style="text-align: center">sorry, the requested web page was not found on this site</p>
-              <p style="text-align: center">｡ﾟ(ﾟ´Д｀ﾟ)ﾟ｡</p>
+            <h2 class="green-hover theme-2">>>error</h2>
+            <div id="container">
+              <!-- Don't put content in "header" div! It will be replaced! If JavaScript is disabled, the following note will appear. -->
+              <div id="header">This site requires JavaScript!</div>
+              <div id="content">
+                <h1>page not found</h1>
+                <p style="text-align: center">sorry, the requested web page was not found on this site</p>
+                <p style="text-align: center">｡ﾟ(ﾟ´Д｀ﾟ)ﾟ｡</p>
+              </div>
+              <div id="footer"></div>
             </div>
-            <div id="footer"></div>
           </div>
         </div>
+        <right-sidebar-component id="right-sidebar-component"></right-sidebar-component>
       </div>
-      <right-sidebar-component id="right-sidebar-component"></right-sidebar-component>
-    </div>
-    <div class="bottom">
-      <div class="visitcount">
-        <a href="https://www.free-counters.org/">free-counters.org</a>
-        <script type="text/javascript" src="https://www.freevisitorcounters.com/auth.php?id=8b39515bb831f5378ca6fc9be2e3ce145605110f"></script>
-        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1337106/t/5"></script>
+      <div class="bottom">
+        <div class="visitcount">
+          <a href="https://www.free-counters.org/">free-counters.org</a>
+          <script type="text/javascript" src="https://www.freevisitorcounters.com/auth.php?id=8b39515bb831f5378ca6fc9be2e3ce145605110f"></script>
+          <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1337106/t/5"></script>
+        </div>
+        <footer-component></footer-component>
       </div>
-      <footer-component></footer-component>
     </div>
     <script src="script.js"></script>
     <script>

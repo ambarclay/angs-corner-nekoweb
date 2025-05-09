@@ -40,53 +40,56 @@
   </head>
   <body onload="loadTheme()">
     <div class="crt theme-2"></div>
-    <mobile-nav-component></mobile-nav-component>
-    <header-component id="header-component"></header-component>
-    <div class="content">
-      <left-sidebar-component id="left-sidebar-component"></left-sidebar-component>
-      <div class="main">
-        <div class="welcomePost">
-          <div class="theme-1">
-            <div class="centerimg">
-              <img src="/images/gifs/GK011.gif" style="margin-right: 140px" class="leftcat" />
-              <img class="titlegif" src="/images/blog.gif" />
-              <img src="/images/gifs/catcute.gif" style="margin-left: 140px" class="rightcat" />
+    <div class="scroll-mobile">
+      <mobile-nav-component></mobile-nav-component>
+      <header-component id="header-component"></header-component>
+      <div class="content">
+        <left-sidebar-component id="left-sidebar-component"></left-sidebar-component>
+        <div class="main">
+          <div class="welcomePost">
+            <div class="theme-1">
+              <div class="centerimg">
+                <img src="/images/gifs/GK011.gif" style="margin-right: 140px" class="leftcat" />
+                <img class="titlegif" src="/images/blog.gif" />
+                <img src="/images/gifs/catcute.gif" style="margin-left: 140px" class="rightcat" />
+              </div>
+            </div>
+            <h2 class="green-hover theme-2">>>blog</h2>
+            <div id="container">
+              <div id="header">This site requires JavaScript!</div>
+              <div id="content">
+                <h3 style="text-align: center">hey there, welcome to my blog!</h3>
+                <p>
+                  this is the place where i will be posting about my life. anything from my every day life, fun trips, cool experiences, or just
+                  things that i've been thinking about recently. basically anything that i would normally post on any of my social media i'll post
+                  here.
+                </p>
+                <p>
+                  i'm using
+                  <a href="https://zonelets.net/" class="link">zonelets</a>
+                  to build/ code this area of my website, and it has been super helpful to setup a simple blog. i can code js (kinda), but zonelets
+                  let me set everything up super quick! if you wanna set up a personal blog and either are lazy like me or don't know js, then i
+                  highly reccomend using it.
+                </p>
+              </div>
+              <div id="footer"></div>
             </div>
           </div>
-          <h2 class="green-hover theme-2">>>blog</h2>
-          <div id="container">
-            <div id="header">This site requires JavaScript!</div>
-            <div id="content">
-              <h3 style="text-align: center">hey there, welcome to my blog!</h3>
-              <p>
-                this is the place where i will be posting about my life. anything from my every day life, fun trips, cool experiences, or just things
-                that i've been thinking about recently. basically anything that i would normally post on any of my social media i'll post here.
-              </p>
-              <p>
-                i'm using
-                <a href="https://zonelets.net/" class="link">zonelets</a>
-                to build/ code this area of my website, and it has been super helpful to setup a simple blog. i can code js (kinda), but zonelets let
-                me set everything up super quick! if you wanna set up a personal blog and either are lazy like me or don't know js, then i highly
-                reccomend using it.
-              </p>
-            </div>
-            <div id="footer"></div>
+          <div class="welcomePost side-box recent-posts-box">
+            <p class="box-title theme-2">recent posts</p>
+            <div id="recentpostlistdiv" style="text-align: left"></div>
           </div>
         </div>
-        <div class="welcomePost side-box recent-posts-box">
-          <p class="box-title theme-2">recent posts</p>
-          <div id="recentpostlistdiv" style="text-align: left"></div>
+        <right-sidebar-component id="right-sidebar-component"></right-sidebar-component>
+      </div>
+      <div class="bottom">
+        <div class="visitcount">
+          <a href="https://www.free-counters.org/">free-counters.org</a>
+          <script type="text/javascript" src="https://www.freevisitorcounters.com/auth.php?id=8b39515bb831f5378ca6fc9be2e3ce145605110f"></script>
+          <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1337106/t/5"></script>
         </div>
+        <footer-component></footer-component>
       </div>
-      <right-sidebar-component id="right-sidebar-component"></right-sidebar-component>
-    </div>
-    <div class="bottom">
-      <div class="visitcount">
-        <a href="https://www.free-counters.org/">free-counters.org</a>
-        <script type="text/javascript" src="https://www.freevisitorcounters.com/auth.php?id=8b39515bb831f5378ca6fc9be2e3ce145605110f"></script>
-        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1337106/t/5"></script>
-      </div>
-      <footer-component></footer-component>
     </div>
     <script src="script.js"></script>
     <script>
