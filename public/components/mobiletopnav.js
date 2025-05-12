@@ -20,7 +20,7 @@ class MobileTopNav extends HTMLElement {
                 <a class="navlink" href="/stwabewwy.html">stwabewwy</a>
                 <a href=""javascript:location.reload();" onclick="switchCSS()">switch theme</a>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="showMobileNav()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>

@@ -60,6 +60,14 @@ button:hover {
   display: none;
 }
 
+#home {
+  display: block;
+}
+
+#about {
+  display: none;
+}
+
 /* HOME PAGE */
 /* HEADER */
 .header {
