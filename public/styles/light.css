@@ -68,6 +68,10 @@ button:hover {
   display: none;
 }
 
+#about-test {
+  display: none;
+}
+
 /* HOME PAGE */
 /* HEADER */
 .header {
