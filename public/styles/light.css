@@ -68,7 +68,43 @@ button:hover {
   display: none;
 }
 
-#about-test {
+#bus {
+  display: none;
+}
+
+#cameras {
+  display: none;
+}
+
+#collections {
+  display: none;
+}
+
+#blinkies {
+  display: none;
+}
+
+#buttons {
+  display: none;
+}
+
+#gifs {
+  display: none;
+}
+
+#stamps {
+  display: none;
+}
+
+#resources {
+  display: none;
+}
+
+#shrines {
+  display: none;
+}
+
+#stwabewwy {
   display: none;
 }
 
@@ -1465,10 +1501,6 @@ a.logo {
     min-height: 626.5px;
   }
 
-  .shrine-warning {
-    display: none;
-  }
-
   /* COLLECTIONS */
   .collection-box {
     min-height: 999px;
@@ -1555,6 +1587,10 @@ a.logo {
   .obsessions-box {
     min-height: initial;
     height: auto;
+  }
+
+  .shrine-warning {
+    display: block;
   }
 
   /* COLLECTIONS */

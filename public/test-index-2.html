@@ -21,20 +21,20 @@
       <div class="mobile-nav-component">
         <div class="topnav">
           <a href="/index.html" class="active logo theme-1"><b>ang's corner</b></a>
-          <div id="myLinks">
-            <a class="navlink" href="/index.html">home</a>
-            <a class="navlink" href="/about.html">about me</a>
-            <a class="navlink" href="/blog/index.html">blog</a>
-            <a class="navlink" href="/bus.html">the bus</a>
-            <a class="navlink" href="/cameras.html">camera collection</a>
-            <a class="navlink" href="/collections.html">digital collections</a>
+          <div id="myLinks" onclick="toggleMobileNav()">
+            <a class="navlink" href="javascript:void(0);" onclick="homeSwitch()">home</a>
+            <a class="navlink" href="javascript:void(0);" onclick="aboutSwitch()">about me</a>
+            <a class="navlink" href="/blog/blog-new-index.html">blog</a>
+            <a class="navlink" href="javascript:void(0);" onclick="busSwitch()">the bus</a>
+            <a class="navlink" href="javascript:void(0);" onclick="camerasSwitch()">camera collection</a>
+            <a class="navlink" href="javascript:void(0);" onclick="collectionsSwitch()">digital collections</a>
             <a class="navlink" href="https://users3.smartgb.com/g/g.php?a=s&i=g36-38350-af" target="_blank">guestbook</a>
-            <a class="navlink" href="/resources.html">resources</a>
-            <a class="navlink" href="/shrines.html">shrines</a>
-            <a class="navlink" href="/stwabewwy.html">stwabewwy</a>
-            <a href="javascript:location.reload();" onclick="switchCSS()">switch theme</a>
+            <a class="navlink" href="javascript:void(0);" onclick="resourcesSwitch()">resources</a>
+            <a class="navlink" href="javascript:void(0);" onclick="shrinesSwitch()">shrines</a>
+            <a class="navlink" href="javascript:void(0);" onclick="stwabewwySwitch()">stwabewwy</a>
+            <a href="javascript:void(0);" onclick="switchCSS()">switch theme</a>
           </div>
-          <a href="javascript:void(0);" class="icon" onclick="showMobileNav()">
+          <a href="javascript:void(0);" class="icon" onclick="toggleMobileNav()">
             <i class="fa fa-bars"></i>
           </a>
         </div>
@@ -71,28 +71,43 @@
                   <ul class="navList">
                     <li>
                       <span class="theme-1">✿ </span><span class="theme-2"> >></span
-                      ><a class="navlink" href="javascript:void(0);" onclick="homeTest()">home</a>
+                      ><a class="navlink" href="javascript:void(0);" onclick="homeSwitch()">home</a>
                     </li>
                     <li>
                       <span class="theme-1">✿ </span><span class="theme-2"> >></span
-                      ><a class="navlink" href="javascript:void(0);" onclick="aboutTest()">about me</a>
+                      ><a class="navlink" href="javascript:void(0);" onclick="aboutSwitch()">about me</a>
                     </li>
-                    <li><span class="theme-1">✿ </span><span class="theme-2"> >></span><a class="navlink" href="/blog/index.html">blog</a></li>
-                    <li><span class="theme-1">✿ </span><span class="theme-2"> >></span><a class="navlink" href="/bus.html">the bus</a></li>
                     <li>
-                      <span class="theme-1">✿ </span><span class="theme-2"> >></span><a class="navlink" href="/cameras.html">camera collection</a>
+                      <span class="theme-1">✿ </span><span class="theme-2"> >></span><a class="navlink" href="/blog/blog-new-index.html">blog</a>
                     </li>
                     <li>
                       <span class="theme-1">✿ </span><span class="theme-2"> >></span
-                      ><a class="navlink" href="/collections.html">digital collections</a>
+                      ><a class="navlink" href="javascript:void(0);" onclick="busSwitch()">the bus</a>
+                    </li>
+                    <li>
+                      <span class="theme-1">✿ </span><span class="theme-2"> >></span
+                      ><a class="navlink" href="javascript:void(0);" onclick="camerasSwitch()">camera collection</a>
+                    </li>
+                    <li>
+                      <span class="theme-1">✿ </span><span class="theme-2"> >></span
+                      ><a class="navlink" href="javascript:void(0);" onclick="collectionsSwitch()">digital collections</a>
                     </li>
                     <li>
                       <span class="theme-1">✿ </span><span class="theme-2"> >></span
                       ><a class="navlink" href="https://users3.smartgb.com/g/g.php?a=s&i=g36-38350-af" target="_blank">guestbook</a>
                     </li>
-                    <li><span class="theme-1">✿ </span><span class="theme-2"> >></span><a class="navlink" href="/resources.html">resources</a></li>
-                    <li><span class="theme-1">✿ </span><span class="theme-2"> >></span><a class="navlink" href="/shrines.html">shrines</a></li>
-                    <li><span class="theme-1">✿ </span><span class="theme-2"> >></span><a class="navlink" href="/stwabewwy.html">stwabewwy</a></li>
+                    <li>
+                      <span class="theme-1">✿ </span><span class="theme-2"> >></span
+                      ><a class="navlink" href="javascript:void(0);" onclick="resourcesSwitch()">resources</a>
+                    </li>
+                    <li>
+                      <span class="theme-1">✿ </span><span class="theme-2"> >></span
+                      ><a class="navlink" href="javascript:void(0);" onclick="shrinesSwitch()">shrines</a>
+                    </li>
+                    <li>
+                      <span class="theme-1">✿ </span><span class="theme-2"> >></span
+                      ><a class="navlink" href="javascript:void(0);" onclick="stwabewwySwitch()">stwabewwy</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -480,6 +495,16 @@
           <h3 style="text-align: center" class="tablet-widget-desktop">wanna see some more cool widgets like this? <br />view on a desktop!</h3>
         </div>
         <div id="about" class="main"></div>
+        <div id="bus" class="main"></div>
+        <div id="cameras" class="main"></div>
+        <div id="collections" class="main"></div>
+        <div id="blinkies" class="main"></div>
+        <div id="buttons" class="main"></div>
+        <div id="gifs" class="main"></div>
+        <div id="stamps" class="main"></div>
+        <div id="resources" class="main"></div>
+        <div id="shrines" class="main"></div>
+        <div id="stwabewwy" class="main"></div>
         <div id="right-sidebar-component">
           <div class="rightbar">
             <div class="side-box" style="margin-top: 0">

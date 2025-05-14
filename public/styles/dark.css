@@ -60,6 +60,54 @@ button:hover {
   margin-top: 20px;
 }
 
+#home {
+  display: block;
+}
+
+#about {
+  display: none;
+}
+
+#bus {
+  display: none;
+}
+
+#cameras {
+  display: none;
+}
+
+#collections {
+  display: none;
+}
+
+#blinkies {
+  display: none;
+}
+
+#buttons {
+  display: none;
+}
+
+#gifs {
+  display: none;
+}
+
+#stamps {
+  display: none;
+}
+
+#resources {
+  display: none;
+}
+
+#shrines {
+  display: none;
+}
+
+#stwabewwy {
+  display: none;
+}
+
 /* HOME PAGE */
 /* HEADER */
 .header {
@@ -1230,7 +1278,7 @@ a:hover {
   cursor: pointer;
 }
 
-/* MIS PAGE MIN HEIGHTS */
+/* MISC PAGE MIN HEIGHTS */
 .blog-oops {
   height: 653.5px;
 }
@@ -1240,7 +1288,7 @@ a:hover {
 }
 
 .obsessions-box {
-  min-height: 371px;
+  min-height: 370px;
 }
 
 .recent-posts-box {
@@ -1404,10 +1452,6 @@ a.logo {
     min-height: 626.5px;
   }
 
-  .shrine-warning {
-    display: block;
-  }
-
   /* COLLECTIONS */
   .collection-box {
     min-height: 999px;
@@ -1494,6 +1538,10 @@ a.logo {
   .obsessions-box {
     min-height: initial;
     height: auto;
+  }
+
+  .shrine-warning {
+    display: block;
   }
 
   /* COLLECTIONS */

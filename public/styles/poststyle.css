@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Pixelated MS Sans Serif";
+  src: url(https://unpkg.com/98.css@0.1.16/dist/ms_sans_serif.woff) format("woff");
+  src: url(https://unpkg.com/98.css@0.1.16/dist/ms_sans_serif.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pixelated MS Sans Serif";
+  src: url(https://unpkg.com/98.css@0.1.16/dist/ms_sans_serif_bold.woff) format("woff");
+  src: url(https://unpkg.com/98.css@0.1.16/dist/ms_sans_serif_bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  width: 100vw;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Pixelated MS Sans Serif", Arial;
+  line-height: 130%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+p {
+  font-size: 15px;
+}
+
+#header ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  gap: 20px;
+}
+
+#header li {
+  list-style-type: none;
+}
+
+#recentpostlistdiv {
+  font-size: 15px;
+}
+
+#postlistdiv {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 650px) {
+  #footer img {
+    display: none;
+  }
+}

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="..//images/favicons/purplekonpeito.png" />
+    <link rel="stylesheet" type="text/css" href="/styles/blogstyle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="/components/mobiletopnav.js" type="text/javascript" defer></script>
+    <title>blog!</title>
+  </head>
+  <body>
+    <!-- BEGIN BROWSER WINDOW -->
+    <div id="browser-window" class="window">
+      <div class="title-bar" id="title-bar">
+        <div class="title-bar-text"><img src="/images/win98/ie-small.png" />welcome to my blog!</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize" id="minimizebtn"></button>
+          <button aria-label="Maximize" disabled></button>
+          <button aria-label="Close" id="closebtn"></button>
+        </div>
+      </div>
+      <div class="window-body" id="edit-bar">
+        <div class="line"></div>
+        <p>File</p>
+        <p>Edit</p>
+        <p>View</p>
+        <p>Favorites</p>
+        <p>Tools</p>
+        <p>Help</p>
+      </div>
+      <div class="window-body" id="explorer-icons">
+        <div class="line4"></div>
+        <div class="explorer-w-title">
+          <img src="/images/win98/back_result.ico" />
+          <p>Back</p>
+        </div>
+        <div class="explorer-w-title">
+          <img src="/images/win98/forward_result.ico" />
+          <p>Forward</p>
+        </div>
+        <div class="explorer-w-title">
+          <img src="/images/win98/stop_result.ico" />
+          <p>Stop</p>
+        </div>
+        <div class="explorer-w-title">
+          <img src="/images/win98/reload_result.ico" />
+          <p>Refresh</p>
+        </div>
+        <div class="line3"></div>
+        <div class="explorer-w-title">
+          <img src="/images/win98/search_web.png" />
+          <p>Search</p>
+        </div>
+        <div class="explorer-w-title">
+          <img src="/images/win98/directory_favorites.png" style="height: 32px" />
+          <p>Favorites</p>
+        </div>
+        <div class="explorer-w-title">
+          <img src="/images/win98/history.png" />
+          <p>History</p>
+        </div>
+        <div class="line3"></div>
+      </div>
+      <div id="address-bar" class="field-row">
+        <div class="line2"></div>
+        <label for="address-bar-directory">Address</label>
+        <select>
+          <option>https://angs-corner.nekoweb.org/blog</option>
+        </select>
+        <!-- <input id="address-bar-directory" type="text" placeholder="https://angs-corner.nekoweb.org/blog"/> -->
+        <div class="go">
+          <img src="/images/win98/undo_7Ic_icon.ico" style="transform: rotateY(180deg); filter: grayscale(1); height: 23px" />
+          <p>Go</p>
+        </div>
+        <div class="line2"></div>
+        <div class="address-bar-links">
+          <p>Links</p>
+          <p id="extra"><b>>></b></p>
+        </div>
+      </div>
+      <div class="window-body">
+        <div id="blog-main-view">
+          <iframe src="/blog/blog-index-test.html" id="blog-contents"> </iframe>
+          <div class="return-button">
+            <a href="/test-index-2.html" style="text-align: center"><p><-return to main site</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BEGIN DESPTOP ICONS -->
+    <div id="desktop-icons">
+      <div class="desktop-icon">
+        <img src="/images/win98/computer_explorer.png" />
+        <p>My Computer</p>
+      </div>
+      <div class="desktop-icon" id="internet-explorer">
+        <img src="/images/win98/ie.png" />
+        <p>Internet Explorer</p>
+      </div>
+      <div class="desktop-icon">
+        <img src="/images/win98/recycle_bin_empty.png" />
+        <p>Recycle Bin</p>
+      </div>
+      <div class="desktop-icon">
+        <img src="/images/win98/folder.png" />
+        <p>Documents</p>
+      </div>
+      <div class="desktop-icon" id="cd-player">
+        <img src="/images/win98/cd_audio.png" />
+        <p>CD Player</p>
+      </div>
+    </div>
+
+    <!-- BEGIN BOTTOM BAR -->
+    <div id="bottom-bar" class="window">
+      <div id="bottom-bar-buttons">
+        <div id="bottom-button-start">
+          <img src="/images/win98/start-small.png" />
+          <p id="start-label"><b>Start</b></p>
+        </div>
+        <div class="line2"></div>
+        <div id="bottom-bar-icons">
+          <img src="/images/win98/desktop.png" />
+          <img src="/images/win98/ie.png" style="height: 17px" />
+          <img src="/images/win98/outlook_express.png" />
+        </div>
+        <div class="line2"></div>
+        <div class="bottom-button pressed" id="blog-bottom-btn">
+          <img src="/images/win98/ie-small.png" />
+          <p id="blog-label">https://angs-corner.neko...</p>
+        </div>
+        <div class="bottom-button" id="player-bottom-btn">
+          <img src="/images/win98/cd_small.png" />
+          <p id="player-label">CD Player</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BEGIN MUSIC PLAYER -->
+    <div class="player" id="music-player">
+      <div class="window">
+        <div class="title-bar" id="music-title-bar">
+          <div class="title-bar-text">
+            <img src="/images/win98/cd_small.png" />
+            <p>CD Player</p>
+          </div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize" id="minimizebtn2"></button>
+            <button aria-label="Maximize" disabled></button>
+            <button aria-label="Close" id="closebtn2"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <div class="flex">
+            <div id="imagestyle"><img class="ic" src="/images/win98/disk-spin.gif" alt="" /></div>
+            <div id="musicplayer">
+              <div class="songtitlewindow">
+                <div class="flex">
+                  <marquee scrollamount="4" class="songtitle"></marquee>
+                  <div class="songtitlearrow"></div>
+                </div>
+              </div>
+              <div class="seeking">
+                <div class="current-time">00:00</div>
+
+                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()" />
+
+                <div class="total-duration">0:00</div>
+              </div>
+              <table class="controls">
+                <tr>
+                  <td>
+                    <div class="prev-track" onclick="prevTrack()">
+                      <button class="player-button"><img src="/images/win98/prev-track.png" class="controlimg" /></button>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="playpause-track" onclick="playpauseTrack()">
+                      <button class="player-button"><img src="/images/win98/play.png" class="controlimg" /></button>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="next-track" onclick="nextTrack()">
+                      <button class="player-button"><img src="/images/win98/next-track.png" class="controlimg" /></button>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              <audio id="music" src=""></audio>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BEGIN START MENU -->
+    <div class="window" id="start-menu">
+      <div id="menu-list">
+        <div class="menu-item">
+          <img src="/images/win98/update-small.png" style="height: 17px" />
+          <p>Windows Update</p>
+        </div>
+        <div class="start-line"></div>
+        <div class="menu-item">
+          <img src="/images/win98/programs-small.png" style="height: 17px" />
+          <p>Programs</p>
+        </div>
+        <div class="menu-item">
+          <img src="/images/win98/favorites-small.png" />
+          <p>Favorites</p>
+        </div>
+        <div class="menu-item">
+          <img src="/images/win98/directory_documents-small.png" style="height: 17px" />
+          <p>Documents</p>
+        </div>
+        <div class="menu-item">
+          <img src="/images/win98/settings-small.png" style="height: 17px" />
+          <p>Settings</p>
+        </div>
+        <div class="menu-item">
+          <img src="/images/win98/find-small.png" style="height: 17px" />
+          <p>Find</p>
+        </div>
+        <div class="menu-item">
+          <img src="/images/win98/help-small.png" style="height: 17px" />
+          <p>Help</p>
+        </div>
+        <div class="menu-item">
+          <img src="/images/win98/run-small.png" style="height: 17px" />
+          <p>Run...</p>
+        </div>
+        <a href="/test-index-2.html">
+          <div class="start-line"></div>
+          <div class="menu-item" id="log-off">
+            <img src="/images/win98/log-off-small.png" style="height: 17px" />
+            <p>Log Off...</p>
+          </div>
+        </a>
+        <a href="/test-index-2.html">
+          <div class="menu-item" id="shut-down">
+            <img src="/images/win98/shut-down-small.png" style="height: 17px" />
+            <p>Shut Down...</p>
+          </div>
+        </a>
+        <div class="arrows">
+          <img src="/images/win98/right-arrow.png" class="start-arrow" />
+          <img src="/images/win98/right-arrow.png" class="start-arrow" />
+          <img src="/images/win98/right-arrow.png" class="start-arrow" />
+          <img src="/images/win98/right-arrow.png" class="start-arrow" />
+          <img src="/images/win98/right-arrow.png" class="start-arrow" />
+        </div>
+      </div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+    <script src="/js/musicplayer.js"></script>
+    <script src="/js/win98.js" type="text/javascript"></script>
+    <!-- <script>
+      document.getElementById("minimizebtn").addEventListener("click", function () {
+        console.log("clicked!");
+
+        if (
+          document.getElementById("browser-window").getAttribute("class") === null ||
+          document.getElementById("browser-window").getAttribute("class").indexOf("minimized") !== -1
+        ) {
+          document.getElementById("browser-window").setAttribute("class", "minimized");
+        }
+      });
+    </script> -->
+  </body>
+</html>
