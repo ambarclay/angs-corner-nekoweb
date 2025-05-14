@@ -26,10 +26,15 @@ body {
   line-height: 130%;
   margin: 0 auto;
   height: 100vh;
+  cursor: url("/images/win982.png");
 }
 
 p {
   font-size: 15px;
+}
+
+a:hover {
+  cursor: url("/images/win98/win98-pointer.png"), pointer;
 }
 
 #header ul {

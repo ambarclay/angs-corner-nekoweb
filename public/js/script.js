@@ -1,4 +1,4 @@
-// LOAD THEME
+//LOAD THEME
 (function () {
   let savedTheme = localStorage.getItem("theme") || "/styles/light.css";
   document.write(`<link id="theme-stylesheet" rel="stylesheet" type="text/css" media="all" href="${savedTheme}">`);
@@ -15,7 +15,7 @@ function toggleMobileNav() {
   }
 }
 
-//PAGE SELECT/ SWITCHER
+//PAGE SELECT & SWITCHER
 function aboutSwitch() {
   let about = document.getElementById("about");
   let bus = document.getElementById("bus");

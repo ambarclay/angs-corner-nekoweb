@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/styles/blogstyle.css" />
     <link rel="stylesheet" href="https://unpkg.com/98.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://iframe.chat/scripts/main.min.js"></script>
     <script src="/components/mobiletopnav.js" type="text/javascript" defer></script>
     <title>blog!</title>
   </head>
@@ -104,7 +105,7 @@
         <img src="/images/win98/recycle_bin_empty.png" />
         <p>Recycle Bin</p>
       </div>
-      <div class="desktop-icon">
+      <div class="desktop-icon" id="documents-chat">
         <img src="/images/win98/folder.png" />
         <p>Documents</p>
       </div>
@@ -135,6 +136,10 @@
         <div class="bottom-button" id="player-bottom-btn">
           <img src="/images/win98/cd_small.png" />
           <p id="player-label">CD Player</p>
+        </div>
+        <div class="bottom-button" id="chat-bottom-btn">
+          <img src="/images/win98/message-small.png" />
+          <p id="player-label">Chat</p>
         </div>
       </div>
     </div>
@@ -192,6 +197,28 @@
               <audio id="music" src=""></audio>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BEGIN CHAT -->
+    <div id="chat-window" class="window">
+      <div class="title-bar" id="chat-title-bar">
+        <div class="title-bar-text"><img src="/images/win98/message-small.png" />chat</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize" id="minimizebtn3"></button>
+          <button aria-label="Maximize" disabled></button>
+          <button aria-label="Close" id="closebtn3"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <div id="chat-main-view">
+          <iframe src="https://iframe.chat/embed?chat=blog_angs_corner" id="chattable" frameborder="0" height="100%" width="100%"></iframe>
+          <script>
+            chattable.initialize({
+              stylesheet: "chattable.css",
+            });
+          </script>
         </div>
       </div>
     </div>

@@ -22,27 +22,6 @@ let curr_track = document.getElementById("music");
 // JUST ADD ANOTHER BRACKET WITH NAME AND PATH
 // CATBOX.MOE IS RECOMMENDED FOR UPLOADING MP3 FILES
 let track_list = [
-  //   {
-  //     name: "One Shot One Kill - The Cat's Whiskers",
-  //     path: "https://files.catbox.moe/fegzmf.mp3",
-  //   },
-  //   {
-  //     name: "Shooting Arrows - The Cat's Whiskers",
-  //     path: "https://files.catbox.moe/zj81lr.mp3",
-  //   },
-  //   {
-  //     name: "4 REAL - The Cat's Whiskers",
-  //     path: "https://files.catbox.moe/fxd8fo.mp3",
-  //   },
-  //   {
-  //     name: "My Sweetest Love - The Cat's Whiskers ft. Kazuma Mitchell",
-  //     path: "https://files.catbox.moe/qe4he5.mp3",
-  //   },
-  //   {
-  //     name: "Mercy On Me - The Cat's Whiskers",
-  //     path: "https://files.catbox.moe/w7nnf9.mp3",
-  //   },
-
   {
     name: "See In Your Fantasy - OMORI OST",
     path: "https://files.catbox.moe/vimay3.mp3",
@@ -52,12 +31,12 @@ let track_list = [
     path: "https://files.catbox.moe/nkfoek.mp3",
   },
   {
-    name: "Beneath the Mask (Instrumental) - Persona 5 OST",
-    path: "https://files.catbox.moe/ax9w8r.mp3",
+    name: "Song of the Ancients - Nier Replicant",
+    path: "https://files.catbox.moe/dmi5nq.mp3",
   },
   {
-    name: "Snow in Summer - Nier Replicant OST",
-    path: "https://files.catbox.moe/qnm2as.mp3",
+    name: "Beneath the Mask (Instrumental) - Persona 5 OST",
+    path: "https://files.catbox.moe/ax9w8r.mp3",
   },
   {
     name: "Snowy - Undertale OST",
@@ -99,12 +78,11 @@ let track_list = [
     name: "When the Moon's Reaching Out Stars -Reload- - Persona 3 Reload OST",
     path: "https://files.catbox.moe/4ygsrp.mp3",
   },
+  {
+    name: "Snow in Summer - Nier Replicant OST",
+    path: "https://files.catbox.moe/qnm2as.mp3",
+  },
 ];
-//
-//
-//
-//
-//
 
 function loadTrack(track_index) {
   clearInterval(updateTimer);

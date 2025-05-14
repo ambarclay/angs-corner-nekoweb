@@ -375,7 +375,14 @@ p {
 .prev-track:hover,
 .playpause-track:hover,
 .next-track:hover,
-a:hover {
+a:hover,
+#minimizebtn3:hover,
+#closebtn3:hover,
+#chat-bottom-btn:hover,
+#documents-chat,
+#log-off,
+#shut-down,
+#bottom-button-start {
   cursor: url("/images/win98/win98-pointer.png"), pointer;
 }
 
@@ -440,9 +447,38 @@ a:hover {
   display: none;
 }
 
+/* CHAT */
+#chat-window {
+  width: 310px;
+  position: absolute;
+  left: 7.5%;
+  top: 11%;
+  transition: 0.3s all;
+}
+
+#chat-title-bar {
+  background: linear-gradient(90deg, #86a1f1, #e8bfe4);
+}
+
+#chat-main-view {
+  background: #fff;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+  display: block;
+  margin: 0 auto;
+  padding: 3px 2px 2px 2px;
+  height: 400px;
+}
+
+/* RESPONSIVENESS */
 @media screen and (max-height: 950px) {
   #blog-contents {
     height: 68vh;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  #chat-window {
+    display: none;
   }
 }
 
