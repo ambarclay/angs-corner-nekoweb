@@ -48,7 +48,7 @@ figcaption {
 }
 
 button:hover {
-  cursor: pointer;
+  cursor: url("/images/win98/win98-pointer.png"), pointer;
 }
 
 #postDate {
@@ -106,6 +106,19 @@ button:hover {
 
 #stwabewwy {
   display: none;
+}
+
+.visitcount a {
+  color: transparent;
+}
+
+.visitcount a:hover {
+  color: transparent;
+}
+
+.visitcount {
+  display: block !important;
+  text-align: center;
 }
 
 /* HOME PAGE */
@@ -471,7 +484,7 @@ marquee img {
 
 .morefavorites {
   width: 200px;
-  padding-top: 24px;
+  padding-top: 17px;
 }
 
 .facts p {
@@ -1275,7 +1288,7 @@ a:visited {
 
 a:hover {
   color: var(--hilight);
-  cursor: pointer;
+  cursor: url("/images/win98/win98-pointer.png"), pointer;
 }
 
 /* MISC PAGE MIN HEIGHTS */

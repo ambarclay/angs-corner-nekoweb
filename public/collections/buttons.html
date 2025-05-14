@@ -1,138 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="../images/favicons/bluekonpeito.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Gaegu&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <script src="/components/header.js" type="text/javascript" defer></script>
-    <script src="/components/navbar.js" type="text/javascript" defer></script>
-    <script src="/components/changelog.js" type="text/javascript" defer></script>
-    <script src="/components/footer-component.js" type="text/javascript" defer></script>
-    <script src="/components/featured-buttons.js" type="text/javascript" defer></script>
-    <script src="/components/clap.js" type="text/javascript" defer></script>
-    <script src="/components/visitors.js" type="text/javascript" defer></script>
-    <script src="/components/tamanotchi.js" type="text/javascript" defer></script>
-    <script src="/components/chatbox.js" type="text/javascript" defer></script>
-    <script src="/components/left-sidebar.js" type="text/javascript" defer></script>
-    <script src="/components/right-sidebar.js" type="text/javascript" defer></script>
-    <script src="/components/mobiletopnav.js" type="text/javascript" defer></script>
-    <script>
-      (function () {
-        let savedTheme = localStorage.getItem("theme") || "/styles/light.css";
-        document.write(`<link id="theme-stylesheet" rel="stylesheet" type="text/css" media="all" href="${savedTheme}">`);
-      })();
-    </script>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-    </script>
-    <title>buttons!</title>
-  </head>
-  <body onload="loadTheme()">
-    <div class="crt theme-2"></div>
-    <div class="scroll-mobile">
-      <mobile-nav-component></mobile-nav-component>
-      <header-component id="header-component"></header-component>
-      <div class="content">
-        <left-sidebar-component id="left-sidebar-component"></left-sidebar-component>
-        <div class="main">
-          <div class="welcomePost side-box collection-box" style="margin-top: 0">
-            <img src="../images/buttons.gif" style="margin-bottom: 15px; margin-top: 15px; height: 40px" class="theme-1" />
-            <h2 class="green-hover theme-2" style="text-align: center">buttons</h2>
-            <br />
-            <img src="../images/buttons/3.5mm.gif" />
-            <img src="../images/buttons/Tumblr_l_2359211723737696.gif" />
-            <img src="../images/buttons/lulu.gif" />
-            <img src="../images/buttons/Tumblr_l_125274404700928.png" />
-            <img src="../images/buttons/90.gif" />
-            <img src="../images/buttons/toebeans_now.gif" />
-            <img src="../images/buttons/naptime.png" />
-            <img src="../images/buttons/wii.png" />
-            <img src="../images/buttons/bvwac.gif" />
-            <img src="../images/buttons/IMG_1816.gif" />
-            <img src="../images/buttons/neocities-pink.gif" />
-            <img src="../images/buttons/angscorner.gif" />
-            <img src="../images/buttons/delete_twitter.gif" />
-            <img src="../images/buttons/firefox.gif" />
-            <img src="../images/buttons/168.gif" />
-            <img src="../images/buttons/2001.gif" />
-            <img src="../images/buttons/8831ani.gif" />
-            <img src="../images/buttons/adorable.gif" />
-            <img src="../images/buttons/AllWeHaveIsEachOther.png" />
-            <img src="../images/buttons/brothings.gif" />
-            <img src="../images/buttons/cutefontuser.gif" />
-            <img src="../images/buttons/eeveelutions-sylveon.gif" />
-            <img src="../images/buttons/foreveronline.gif" />
-            <img src="../images/buttons/graphic-design.gif" />
-            <img src="../images/buttons/nintendo-hh-gba.png" />
-            <img src="../images/buttons/loveanimals.gif" />
-            <img src="../images/buttons/html_learn_it_today.gif" />
-            <img src="../images/buttons/jojo.gif" />
-            <img src="../images/buttons/lain.gif" />
-            <img src="../images/buttons/typhrakromer.gif" />
-            <img src="../images/buttons/macmade2.gif" />
-            <img src="../images/buttons/Made_In_The_USA.png" />
-            <img src="../images/buttons/microhate.jpg" />
-            <img src="../images/buttons/nintendo-hh-ds.png" />
-            <img src="../images/buttons/not.gif" />
-            <img src="../images/buttons/pictochat.gif" />
-            <img src="../images/buttons/playstation.gif" />
-            <img src="../images/buttons/rainbowbutton.gif" />
-            <img src="../images/buttons/sixeyes-mspaint2.png" />
-            <img src="../images/buttons/spamtombutton.gif" />
-            <img src="../images/buttons/vscbutton.gif" />
-            <img src="../images/buttons/weblogo2.gif" />
-            <img src="../images/buttons/WEBP.gif" />
-            <img src="../images/buttons/y2k.gif" />
-            <img src="../images/buttons/archive.png" />
-            <a href="https://dimden.dev/"><img src="https://dimden.dev/services/images/88x31.gif" /></a>
-            <a href="https://petrapixel.neocities.org/" target="_blank">
-              <img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/assets/img/linkback.gif" alt="petrapixel" />
-            </a>
-            <a href="https://status.cafe"><img src="https://status.cafe/assets/button.png" alt="Status Cafe" /></a>
-            <a href="https://tamanotchi.world" target="_blank">
-              <img src="https://tamanotchi.world/includes/img/tamanotchi.gif" alt="TamaNOTchi Badge" />
-            </a>
-            <div class="centerdiv">
-              <a href="/collections.html">
-                <p style="text-align: center" class="back-to-collections"><- back to collections</p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <right-sidebar-component id="right-sidebar-component"></right-sidebar-component>
-      </div>
-      <div class="bottom">
-        <div class="visitcount">
-          <a href="https://www.free-counters.org/">free-counters.org</a>
-          <script type="text/javascript" src="https://www.freevisitorcounters.com/auth.php?id=8b39515bb831f5378ca6fc9be2e3ce145605110f"></script>
-          <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1337106/t/5"></script>
-        </div>
-        <footer-component></footer-component>
-      </div>
-    </div>
-    <script>
-      function switchCSS() {
-        let themeLink = document.getElementById("theme-stylesheet");
-        let currentTheme = localStorage.getItem("theme") || "/styles/light.css";
-
-        let newTheme = currentTheme === "/styles/light.css" ? "/styles/dark.css" : "/styles/light.css";
-
-        themeLink.setAttribute("href", newTheme);
-
-        localStorage.setItem("theme", newTheme);
-      }
-    </script>
-    <script src="https://status.cafe/current-status.js?name=angieblah" defer></script>
-  </body>
-</html>
+<div class="welcomePost side-box collection-box" style="margin-top: 0">
+  <img src="../images/buttons.gif" style="margin-bottom: 15px; margin-top: 15px; height: 40px" class="theme-1" />
+  <h2 class="green-hover theme-2" style="text-align: center">buttons</h2>
+  <br />
+  <img src="../images/buttons/3.5mm.gif" />
+  <img src="../images/buttons/Tumblr_l_2359211723737696.gif" />
+  <img src="../images/buttons/lulu.gif" />
+  <img src="../images/buttons/Tumblr_l_125274404700928.png" />
+  <img src="../images/buttons/90.gif" />
+  <img src="../images/buttons/toebeans_now.gif" />
+  <img src="../images/buttons/naptime.png" />
+  <img src="../images/buttons/wii.png" />
+  <img src="../images/buttons/bvwac.gif" />
+  <img src="../images/buttons/IMG_1816.gif" />
+  <img src="../images/buttons/neocities-pink.gif" />
+  <img src="../images/buttons/angscorner.gif" />
+  <img src="../images/buttons/delete_twitter.gif" />
+  <img src="../images/buttons/firefox.gif" />
+  <img src="../images/buttons/168.gif" />
+  <img src="../images/buttons/2001.gif" />
+  <img src="../images/buttons/8831ani.gif" />
+  <img src="../images/buttons/adorable.gif" />
+  <img src="../images/buttons/AllWeHaveIsEachOther.png" />
+  <img src="../images/buttons/brothings.gif" />
+  <img src="../images/buttons/cutefontuser.gif" />
+  <img src="../images/buttons/eeveelutions-sylveon.gif" />
+  <img src="../images/buttons/foreveronline.gif" />
+  <img src="../images/buttons/graphic-design.gif" />
+  <img src="../images/buttons/nintendo-hh-gba.png" />
+  <img src="../images/buttons/loveanimals.gif" />
+  <img src="../images/buttons/html_learn_it_today.gif" />
+  <img src="../images/buttons/jojo.gif" />
+  <img src="../images/buttons/lain.gif" />
+  <img src="../images/buttons/typhrakromer.gif" />
+  <img src="../images/buttons/macmade2.gif" />
+  <img src="../images/buttons/Made_In_The_USA.png" />
+  <img src="../images/buttons/microhate.jpg" />
+  <img src="../images/buttons/nintendo-hh-ds.png" />
+  <img src="../images/buttons/not.gif" />
+  <img src="../images/buttons/pictochat.gif" />
+  <img src="../images/buttons/playstation.gif" />
+  <img src="../images/buttons/rainbowbutton.gif" />
+  <img src="../images/buttons/sixeyes-mspaint2.png" />
+  <img src="../images/buttons/spamtombutton.gif" />
+  <img src="../images/buttons/vscbutton.gif" />
+  <img src="../images/buttons/weblogo2.gif" />
+  <img src="../images/buttons/WEBP.gif" />
+  <img src="../images/buttons/y2k.gif" />
+  <img src="../images/buttons/archive.png" />
+  <a href="https://dimden.dev/"><img src="https://dimden.dev/services/images/88x31.gif" /></a>
+  <a href="https://petrapixel.neocities.org/" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/assets/img/linkback.gif" alt="petrapixel" />
+  </a>
+  <a href="https://status.cafe"><img src="https://status.cafe/assets/button.png" alt="Status Cafe" /></a>
+  <a href="https://tamanotchi.world" target="_blank">
+    <img src="https://tamanotchi.world/includes/img/tamanotchi.gif" alt="TamaNOTchi Badge" />
+  </a>
+  <div class="centerdiv">
+    <a href="javascript:void(0);" onclick="collectionsSwitch()">
+      <p style="text-align: center" class="back-to-collections"><- back to collections</p>
+    </a>
+  </div>
+</div>

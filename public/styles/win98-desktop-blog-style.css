@@ -269,6 +269,25 @@ p {
   margin: 0;
 }
 
+#application-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 23px;
+  width: 100px;
+  padding: 0 10px 0 10px;
+  margin-right: auto;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+}
+
+#time {
+  padding-left: 5px;
+}
+
+#bottom-spacer {
+  flex-grow: 10;
+}
+
 #imagestyle {
   background: silver; /* background color of player */
   border: 2px solid silver; /* border around player */
@@ -375,6 +394,8 @@ p {
 .prev-track:hover,
 .playpause-track:hover,
 .next-track:hover,
+.player-button:hover,
+.seek_slider:hover,
 a:hover,
 #minimizebtn3:hover,
 #closebtn3:hover,

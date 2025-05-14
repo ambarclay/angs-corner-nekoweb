@@ -16,6 +16,12 @@ body {
   background-attachment: local;
   background-repeat: repeat;
 }
+#settingsMenu p {
+  color: #ff69b4;
+}
+#settingsMenu h2 {
+  color: #ff69b4;
+}
 a {
   color: #88f;
 }
@@ -104,7 +110,7 @@ a {
   height: 15px;
   width: 15px;
   padding: 6px;
-  margin-top: 3px;
+  margin-top: 6px;
   margin-left: 3px;
   background-image: url(/media/pixel-emoji.webp) !important;
   opacity: 0.5;

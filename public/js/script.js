@@ -45,7 +45,7 @@ function aboutSwitch() {
   gifs.style.display = "none";
   stamps.style.display = "none";
 
-  $("#about").load("about-test.html");
+  $("#about").load("about.html");
 }
 
 function busSwitch() {
@@ -77,7 +77,7 @@ function busSwitch() {
   gifs.style.display = "none";
   stamps.style.display = "none";
 
-  $("#bus").load("bus-test.html");
+  $("#bus").load("bus.html");
 }
 
 function camerasSwitch() {
@@ -109,7 +109,7 @@ function camerasSwitch() {
   gifs.style.display = "none";
   stamps.style.display = "none";
 
-  $("#cameras").load("cameras-test.html");
+  $("#cameras").load("cameras.html");
 }
 
 function collectionsSwitch() {
@@ -141,7 +141,7 @@ function collectionsSwitch() {
   gifs.style.display = "none";
   stamps.style.display = "none";
 
-  $("#collections").load("collections-test.html");
+  $("#collections").load("collections.html");
 }
 
 function homeSwitch() {
@@ -203,7 +203,7 @@ function resourcesSwitch() {
   gifs.style.display = "none";
   stamps.style.display = "none";
 
-  $("#resources").load("resources-test.html");
+  $("#resources").load("resources.html");
 }
 
 function shrinesSwitch() {
@@ -235,39 +235,7 @@ function shrinesSwitch() {
   gifs.style.display = "none";
   stamps.style.display = "none";
 
-  $("#shrines").load("shrines-test.html");
-}
-
-function shrinesSwitch() {
-  let about = document.getElementById("about");
-  let bus = document.getElementById("bus");
-  let cameras = document.getElementById("cameras");
-  let collections = document.getElementById("collections");
-  let home = document.getElementById("home");
-  let resources = document.getElementById("resources");
-  let shrines = document.getElementById("shrines");
-  let stwabewwy = document.getElementById("stwabewwy");
-
-  let blinkies = document.getElementById("blinkies");
-  let buttons = document.getElementById("buttons");
-  let gifs = document.getElementById("gifs");
-  let stamps = document.getElementById("stamps");
-
-  about.style.display = "none";
-  bus.style.display = "none";
-  cameras.style.display = "none";
-  collections.style.display = "none";
-  home.style.display = "none";
-  resources.style.display = "none";
-  shrines.style.display = "block";
-  stwabewwy.style.display = "none";
-
-  blinkies.style.display = "none";
-  buttons.style.display = "none";
-  gifs.style.display = "none";
-  stamps.style.display = "none";
-
-  $("#shrines").load("shrines-test.html");
+  $("#shrines").load("shrines.html");
 }
 
 function stwabewwySwitch() {
@@ -299,7 +267,7 @@ function stwabewwySwitch() {
   gifs.style.display = "none";
   stamps.style.display = "none";
 
-  $("#stwabewwy").load("stwabewwy-test.html");
+  $("#stwabewwy").load("stwabewwy.html");
 }
 
 function blinkiesSwitch() {
@@ -331,7 +299,7 @@ function blinkiesSwitch() {
   gifs.style.display = "none";
   stamps.style.display = "none";
 
-  $("#blinkies").load("/collections/blinkies-test.html");
+  $("#blinkies").load("/collections/blinkies.html");
 }
 
 function buttonsSwitch() {
@@ -363,7 +331,7 @@ function buttonsSwitch() {
   gifs.style.display = "none";
   stamps.style.display = "none";
 
-  $("#buttons").load("/collections/buttons-test.html");
+  $("#buttons").load("/collections/buttons.html");
 }
 
 function gifsSwitch() {
@@ -395,7 +363,7 @@ function gifsSwitch() {
   gifs.style.display = "block";
   stamps.style.display = "none";
 
-  $("#gifs").load("/collections/gifs-test.html");
+  $("#gifs").load("/collections/gifs.html");
 }
 
 function stampsSwitch() {
@@ -427,5 +395,5 @@ function stampsSwitch() {
   gifs.style.display = "none";
   stamps.style.display = "block";
 
-  $("#stamps").load("/collections/stamps-test.html");
+  $("#stamps").load("/collections/stamps.html");
 }

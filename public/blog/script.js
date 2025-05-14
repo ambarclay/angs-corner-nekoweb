@@ -33,12 +33,12 @@ let authorLink = ""; // Enter your website, social media, etc. Some way for peop
 //add new posts BEFORE previous post in array
 let postsArray = [
   //[ "posts/2020-11-10-Special-Characters-Example.html", encodeURI( 'Spéci@l "Character\'s" Examp|e' ) ],
-  // ["posts/2025-04-30-decluttering,-minimalism,-and-moving.html"],
-  // ["posts/2025-04-02-welcome-to-my-blog!.html"],
-  // ["posts/2025-02-27-test-post-please-ignore.html"],
-  ["posts/2025-04-30-BLOGTEST-decluttering,-minimalism,-and-moving.html"],
-  ["posts/2025-04-02-BLOGTEST-welcome-to-my-blog!.html"],
-  ["posts/2025-02-27-BLOGTEST-test-post-please-ignore.html"],
+  ["posts/2025-04-30-decluttering,-minimalism,-and-moving.html"],
+  ["posts/2025-04-02-welcome-to-my-blog!.html"],
+  ["posts/2025-02-27-test-post-please-ignore.html"],
+  // ["posts/2025-04-30-BLOGTEST-decluttering,-minimalism,-and-moving.html"],
+  // ["posts/2025-04-02-BLOGTEST-welcome-to-my-blog!.html"],
+  // ["posts/2025-02-27-BLOGTEST-test-post-please-ignore.html"],
 ];
 
 //XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
@@ -67,12 +67,7 @@ if (url.includes("posts/")) {
 //Generate the Header HTML, a series of list items containing links.
 let headerHTML =
   // '<ul> <li><a href="' + relativePath + '/index.html">home</a></li>' + '<li><a href="' + relativePath + '/archive.html">archive</a></li></ul>';
-  '<ul> <li><a href="' +
-  relativePath +
-  '/blog-index-test.html">home</a></li>' +
-  '<li><a href="' +
-  relativePath +
-  '/blog-archive-test.html">archive</a></li></ul>';
+  '<ul> <li><a href="' + relativePath + '/index.html">home</a></li>' + '<li><a href="' + relativePath + '/archive.html">archive</a></li></ul>';
 
 //Generate the Footer HTML, which uses the variables defined in the BASIC INFO section above to list info about the site.
 //Note: feel free to remove the references to Zonelets and Neocities! Just be careful not to delete any necessary HTML closing tags or other syntax.
@@ -205,15 +200,13 @@ let prevlink = "";
  a "Next Post" link, right? And vice versa with the oldest 
  post! That's what the following code handles.*/
 if (postsArray.length < 2) {
-  nextprevHTML = '<a href="' + relativePath + '/blog-index-test.html">home</a>';
+  nextprevHTML = '<a href="' + relativePath + '/index.html">home</a>';
 } else if (currentIndex === 0) {
   prevlink = postsArray[currentIndex + 1][0];
-  nextprevHTML =
-    '<a href="' + relativePath + '/blog-index-test.html">home</a> | <a href="' + relativePath + "/" + prevlink + '">previous post \u00BB</a>';
+  nextprevHTML = '<a href="' + relativePath + '/index.html">home</a> | <a href="' + relativePath + "/" + prevlink + '">previous post \u00BB</a>';
 } else if (currentIndex === postsArray.length - 1) {
   nextlink = postsArray[currentIndex - 1][0];
-  nextprevHTML =
-    '<a href="' + relativePath + "/" + nextlink + '">\u00AB next post</a> | <a href="' + relativePath + '/blog-index-test.html">home</a>';
+  nextprevHTML = '<a href="' + relativePath + "/" + nextlink + '">\u00AB next post</a> | <a href="' + relativePath + '/index.html">home</a>';
 } else if (0 < currentIndex && currentIndex < postsArray.length - 1) {
   nextlink = postsArray[currentIndex - 1][0];
   prevlink = postsArray[currentIndex + 1][0];
@@ -224,7 +217,7 @@ if (postsArray.length < 2) {
     nextlink +
     '">\u00AB next post</a> | <a href="' +
     relativePath +
-    '/blog-index-test.html">home</a> | <a href="' +
+    '/index.html">home</a> | <a href="' +
     relativePath +
     "/" +
     prevlink +

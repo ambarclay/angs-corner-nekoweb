@@ -3,158 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link id="theme-stylesheet" rel="stylesheet" type="text/css" media="all" /> -->
-    <link rel="icon" type="image/x-icon" href="/images/favicons/purplekonpeito.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Gaegu&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <script src="/components/header.js" type="text/javascript" defer></script>
-    <script src="/components/navbar.js" type="text/javascript" defer></script>
-    <script src="/components/changelog.js" type="text/javascript" defer></script>
-    <script src="/components/footer-component.js" type="text/javascript" defer></script>
-    <script src="/components/featured-buttons.js" type="text/javascript" defer></script>
-    <script src="/components/clap.js" type="text/javascript" defer></script>
-    <script src="/components/visitors.js" type="text/javascript" defer></script>
-    <script src="/components/tamanotchi.js" type="text/javascript" defer></script>
-    <script src="/components/chatbox.js" type="text/javascript" defer></script>
-    <script src="/components/left-sidebar.js" type="text/javascript" defer></script>
-    <script src="/components/right-sidebar.js" type="text/javascript" defer></script>
-    <script src="/components/mobiletopnav.js" type="text/javascript" defer></script>
-    <script>
-      (function () {
-        let savedTheme = localStorage.getItem("theme") || "/styles/light.css";
-        document.write(`<link id="theme-stylesheet" rel="stylesheet" type="text/css" media="all" href="${savedTheme}">`);
-      })();
-    </script>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-    </script>
+    <link rel="stylesheet" href="/styles/plain-blog-style.css" />
     <title>Blog Post</title>
   </head>
-  <body onload="loadTheme()">
-    <div class="crt theme-2"></div>
-    <div class="scroll-mobile">
-      <mobile-nav-component></mobile-nav-component>
-      <header-component id="header-component"></header-component>
-      <div class="content">
-        <left-sidebar-component id="left-sidebar-component"></left-sidebar-component>
-        <div class="main">
-          <div class="welcomePost blog-box">
-            <div id="container">
-              <div id="content">
-                <div class="theme-2">
-                  <div style="display: flex; align-items: center; justify-content: left; height: 40px">
-                    <h1 style="text-align: left" class="blog-h1 theme-2">>></h1>
-                    <h1 id="postTitleH1-2" class="green-hover theme-2"></h1>
-                  </div>
-                </div>
-                <h1 id="postTitleH1" class="theme-1" style="font-size: 30px; margin-bottom: 0; padding-bottom: 0"></h1>
-                <h4 id="postDate"></h4>
-                <!-- <div id="header2">...</div> -->
-                <p>
-                  Tomorrow, May 1st, marks exactly 2 months left in the house Joe and I are renting. We've been in this place for the last 4 years, so
-                  you would think that moving out would be difficult and emotional, but so far it's been the complete opposite for me. I'm excited to
-                  go through our things, pack up, and move out. Maybe it's because we still have a couple months here, but still I'm surprised I'm not
-                  more emotional about it (I do tend to cry about everything lol.)
-                </p>
-                <p>
-                  <i>So Ang, where are you guys moving to?</i> Yeah... we're moving back in with my parents. It's only temporary while we look for a
-                  house to buy though! We've got a big trip planned in October and didn't want to buy anything before that, and our lease is up the
-                  1st of July, so we needed somewhere to go in the mean time. And no, the bus isn't ready so we can't live in that yet haha.
-                </p>
-                <img class="centerimg" src="/images/gifs/colorline.gif" />
-                <p>
-                  Joe and I have been interested in minimalism for a while, both digital and physical. I really like watching
-                  <a href="https://www.youtube.com/@SamuraiMatcha" class="link">Samurai Matcha</a> on YouTube, and he has really inspired me to try
-                  and live a more minimal life with only the things I need. My biggest probalem is that I am a very nostalgic and sentimental person,
-                  so I find it really difficult to get rid of basically anything. But now, because we are moving into my tiny ass childhood room with
-                  basically no extra space, and cause any extra stuff means we need to pay more money for a bigger storage unit, I'm pretty much being
-                  forced to get rid of anything that I don't really need.
-                </p>
-                <p>
-                  I was really expecting myself to get really emotional while decluttering all of our stuff (notice the running theme), but it's
-                  actually felt like a huge weight has been lifted off of my shoulders. At this point we've only gone through a few closets and
-                  bookshelves, but I have had so much stuff that I was keeping because I thought I needed to for one reason or another. To finally
-                  realize that it's okay to not have a bunch of notebooks 'just in case', it's okay to get rid of the hundreds of pencils and pens I
-                  don't use, it's okay to only have a few candles, it's okay to get rid of gifts I don't like or don't use... it's so freeing.
-                </p>
-                <p>
-                  Focusing on the candles for a second, I probably had over 50 candles tucked away on a shelf in the closet. There were so many that
-                  half the time I went to light one, I got decision paralysis because of the amount of options. Should I go for snickerdoodle or Merry
-                  Cookie or sugar cookie or peppermint sugar cookie or... you get the idea. I decided to keep one candle from each 'category' of
-                  scent, so now it's easy to pick out the one I want. Do I want the coffee candle, the fruity one, the baked goods one, or the balsam
-                  one? It's so simple.
-                </p>
-                <p>
-                  I'm really excited to do what I did with the candles with the rest of our things. Making decisions gives me so much anxiety, so
-                  decreasing the amount of options for myself both keeps my space clean and free of clutter, and also gives me one less trigger for my
-                  anxiety.
-                </p>
-                <img class="centerimg" src="/images/gifs/colorline.gif" />
-                <p>
-                  Even though I'm looking forward to being minimal for this next 1/2 - full year, I don't think we could ever be 'true' minimalists.
-                  As you can probably tell by how my website looks, I love collecting things. I have a decent sized camera collection that you would
-                  have to pry from my cold, dead fingers, as well as all of our books which we both love and don't want to get rid of. And I think
-                  that's okay.
-                </p>
-                <p>
-                  With a lot of the junk we've gone through and got rid of so far, it was just things we were keeping unconsiously because we thought
-                  we needed to or because 'we'll use it later' and never did. Our collections, though, are intentional. I know every camera I have,
-                  what film they use, what manufacturer made them, what year they're from, and have been working my way through testing them. Same
-                  thing with the books, we've gotten rid of the ones we don't like/ won't read, and what's left over is a collection of all of our
-                  favorite stories.
-                </p>
-                <p>
-                  Joe and I have started calling this way of thinking <i>intentionalism</i> rather than minimalism. I have no idea if that's something
-                  that exists already, but how we see it is that we want everything we own to have a purpose. Each thing should have it's place in the
-                  house, and once those things do not have a purpose for us anymore then we give it away.
-                </p>
-                <p>
-                  Doing a huge move and declutter like we're doing is the perfect excuse for us to fully implement this <i>intentionalist</i> way of
-                  thinking. I know that it'll be fairly easy to maintain this while living with my parents, but I'm hoping that once we move into a
-                  bigger space again that we can continue being intentional with the things we buy.
-                </p>
-                <p style="text-align: center">♥ ang</p>
-                <div id="nextprev"></div>
-              </div>
-              <!-- end of div id="content" -->
-              <div id="footer"></div>
-            </div>
-            <!-- end of div id="container" -->
-          </div>
-        </div>
-        <right-sidebar-component id="right-sidebar-component"></right-sidebar-component>
+  <body>
+    <div id="container">
+      <div id="content">
+        <h2 id="postTitleH1" style="text-align: center"></h2>
+        <h4 id="postDate" style="text-align: center"></h4>
+        <div id="header">...</div>
+        <p>
+          Tomorrow, May 1st, marks exactly 2 months left in the house Joe and I are renting. We've been in this place for the last 4 years, so you
+          would think that moving out would be difficult and emotional, but so far it's been the complete opposite for me. I'm excited to go through
+          our things, pack up, and move out. Maybe it's because we still have a couple months here, but still I'm surprised I'm not more emotional
+          about it (I do tend to cry about everything lol.)
+        </p>
+        <p>
+          <i>So Ang, where are you guys moving to?</i> Yeah... we're moving back in with my parents. It's only temporary while we look for a house to
+          buy though! We've got a big trip planned in October and didn't want to buy anything before that, and our lease is up the 1st of July, so we
+          needed somewhere to go in the mean time. And no, the bus isn't ready so we can't live in that yet haha.
+        </p>
+        <div style="text-align: center"><img src="/images/gifs/colorline.gif" /></div>
+        <p>
+          Joe and I have been interested in minimalism for a while, both digital and physical. I really like watching
+          <a href="https://www.youtube.com/@SamuraiMatcha" class="link">Samurai Matcha</a> on YouTube, and he has really inspired me to try and live a
+          more minimal life with only the things I need. My biggest probalem is that I am a very nostalgic and sentimental person, so I find it really
+          difficult to get rid of basically anything. But now, because we are moving into my tiny ass childhood room with basically no extra space,
+          and cause any extra stuff means we need to pay more money for a bigger storage unit, I'm pretty much being forced to get rid of anything
+          that I don't really need.
+        </p>
+        <p>
+          I was really expecting myself to get really emotional while decluttering all of our stuff (notice the running theme), but it's actually felt
+          like a huge weight has been lifted off of my shoulders. At this point we've only gone through a few closets and bookshelves, but I have had
+          so much stuff that I was keeping because I thought I needed to for one reason or another. To finally realize that it's okay to not have a
+          bunch of notebooks 'just in case', it's okay to get rid of the hundreds of pencils and pens I don't use, it's okay to only have a few
+          candles, it's okay to get rid of gifts I don't like or don't use... it's so freeing.
+        </p>
+        <p>
+          Focusing on the candles for a second, I probably had over 50 candles tucked away on a shelf in the closet. There were so many that half the
+          time I went to light one, I got decision paralysis because of the amount of options. Should I go for snickerdoodle or Merry Cookie or sugar
+          cookie or peppermint sugar cookie or... you get the idea. I decided to keep one candle from each 'category' of scent, so now it's easy to
+          pick out the one I want. Do I want the coffee candle, the fruity one, the baked goods one, or the balsam one? It's so simple.
+        </p>
+        <p>
+          I'm really excited to do what I did with the candles with the rest of our things. Making decisions gives me so much anxiety, so decreasing
+          the amount of options for myself both keeps my space clean and free of clutter, and also gives me one less trigger for my anxiety.
+        </p>
+        <div style="text-align: center"><img src="/images/gifs/colorline.gif" /></div>
+        <p>
+          Even though I'm looking forward to being minimal for this next 1/2 - full year, I don't think we could ever be 'true' minimalists. As you
+          can probably tell by how my website looks, I love collecting things. I have a decent sized camera collection that you would have to pry from
+          my cold, dead fingers, as well as all of our books which we both love and don't want to get rid of. And I think that's okay.
+        </p>
+        <p>
+          With a lot of the junk we've gone through and got rid of so far, it was just things we were keeping unconsiously because we thought we
+          needed to or because 'we'll use it later' and never did. Our collections, though, are intentional. I know every camera I have, what film
+          they use, what manufacturer made them, what year they're from, and have been working my way through testing them. Same thing with the books,
+          we've gotten rid of the ones we don't like/ won't read, and what's left over is a collection of all of our favorite stories.
+        </p>
+        <p>
+          Joe and I have started calling this way of thinking <i>intentionalism</i> rather than minimalism. I have no idea if that's something that
+          exists already, but how we see it is that we want everything we own to have a purpose. Each thing should have it's place in the house, and
+          once those things do not have a purpose for us anymore then we give it away.
+        </p>
+        <p>
+          Doing a huge move and declutter like we're doing is the perfect excuse for us to fully implement this <i>intentionalist</i> way of thinking.
+          I know that it'll be fairly easy to maintain this while living with my parents, but I'm hoping that once we move into a bigger space again
+          that we can continue being intentional with the things we buy.
+        </p>
+        <p style="text-align: center">♥ ang</p>
+        <div id="nextprev" style="text-align: center"></div>
       </div>
-      <div class="bottom">
-        <div class="visitcount">
-          <a href="https://www.free-counters.org/">free-counters.org</a>
-          <script type="text/javascript" src="https://www.freevisitorcounters.com/auth.php?id=8b39515bb831f5378ca6fc9be2e3ce145605110f"></script>
-          <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1337106/t/5"></script>
-        </div>
-        <footer-component></footer-component>
-      </div>
+      <div id="footer" style="text-align: center"></div>
     </div>
-    <script src="/blog/script.js"></script>
-    <script>
-      function switchCSS() {
-        let themeLink = document.getElementById("theme-stylesheet");
-        let currentTheme = localStorage.getItem("theme") || "/styles/light.css";
-
-        let newTheme = currentTheme === "/styles/light.css" ? "/styles/dark.css" : "/styles/light.css";
-
-        themeLink.setAttribute("href", newTheme);
-
-        localStorage.setItem("theme", newTheme);
-      }
-    </script>
-    <script src="https://status.cafe/current-status.js?name=angieblah" defer></script>
+    <script src="/blog/script.js" type="text/javascript"></script>
   </body>
 </html>

@@ -123,6 +123,19 @@ startBtn.addEventListener("click", function () {
   }
 });
 
+// GET TIME
+window.addEventListener("load", function () {
+  clock();
+  function clock() {
+    const now = new Date();
+    const timeString = now.toLocaleTimeString();
+
+    let timeDisplay = document.getElementById("time");
+    timeDisplay.innerHTML = timeString;
+    setTimeout(clock, 1000);
+  }
+});
+
 // document.getElementById("minimizebtn").addEventListener("click", function () {
 //   document.getElementById("browser-window").classList.add("minimized");
 //   document.getElementById("blog-bottom-btn").classList.remove("pressed");
