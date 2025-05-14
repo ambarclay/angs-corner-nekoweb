@@ -23,12 +23,12 @@ let curr_track = document.getElementById("music");
 // CATBOX.MOE IS RECOMMENDED FOR UPLOADING MP3 FILES
 let track_list = [
   {
-    name: "See In Your Fantasy - OMORI OST",
-    path: "https://files.catbox.moe/vimay3.mp3",
-  },
-  {
     name: "Slow Moon - Streets of Rage 2 OST",
     path: "https://files.catbox.moe/nkfoek.mp3",
+  },
+  {
+    name: "It Means Everything - OMORI OST",
+    path: "https://files.catbox.moe/nak2ki.mp3",
   },
   {
     name: "Song of the Ancients - Nier Replicant",
@@ -43,8 +43,8 @@ let track_list = [
     path: "https://files.catbox.moe/b35nlk.mp3",
   },
   {
-    name: "Chemical Plant Zone - Sonic the Hedgehog 2 OST",
-    path: "https://files.catbox.moe/sc011m.mp3",
+    name: "Casino Night Zone - Sonic the Hedgehog 2 OST",
+    path: "https://files.catbox.moe/baf7gn.mp3",
   },
   {
     name: "Dreamer - Streets of Rage 2 OST",
@@ -63,16 +63,16 @@ let track_list = [
     path: "https://files.catbox.moe/u4mp88.mp3",
   },
   {
+    name: "See In Your Fantasy - OMORI OST",
+    path: "https://files.catbox.moe/vimay3.mp3",
+  },
+  {
     name: "The Days When My Mother Was There - Persona 5 OST",
     path: "https://files.catbox.moe/enfpqt.mp3",
   },
   {
     name: "Fallen Down - Undertale OST",
     path: "https://files.catbox.moe/aew4sx.mp3",
-  },
-  {
-    name: "It Means Everything - OMORI OST",
-    path: "https://files.catbox.moe/nak2ki.mp3",
   },
   {
     name: "When the Moon's Reaching Out Stars -Reload- - Persona 3 Reload OST",
