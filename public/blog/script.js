@@ -33,6 +33,7 @@ let authorLink = ""; // Enter your website, social media, etc. Some way for peop
 //add new posts BEFORE previous post in array
 let postsArray = [
   //[ "posts/2020-11-10-Special-Characters-Example.html", encodeURI( 'Spéci@l "Character\'s" Examp|e' ) ],
+  ["posts/2025-05-15-thoughts-on-ai-art.html"],
   ["posts/2025-04-30-decluttering,-minimalism,-and-moving.html"],
   ["posts/2025-04-02-welcome-to-my-blog!.html"],
   ["posts/2025-02-27-test-post-please-ignore.html"],

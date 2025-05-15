@@ -167,13 +167,87 @@ p {
   display: block;
   margin: 0 auto;
   padding: 12px 8px;
-  height: 600px;
+  height: 579px;
 }
 
 #blog-contents {
-  height: 600px;
+  height: 570px;
   width: 912px;
   border: none;
+}
+
+#browser-scroll-bar {
+  width: 17px;
+  height: 599px;
+  image-rendering: pixelated;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAyIDIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyI+CjxtZXRhZGF0YT5NYWRlIHdpdGggUGl4ZWxzIHRvIFN2ZyBodHRwczovL2NvZGVwZW4uaW8vc2hzaGF3L3Blbi9YYnh2Tmo8L21ldGFkYXRhPgo8cGF0aCBzdHJva2U9IiNjMGMwYzAiIGQ9Ik0wIDBoMU0xIDFoMSIgLz4KPC9zdmc+");
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 21.8%;
+  right: 13px;
+}
+
+.up-arrow {
+  width: 17px;
+}
+
+.down-arrow {
+  width: 17px;
+}
+
+.scrollbar {
+  width: 17px;
+  height: 200px;
+  background: silver;
+  border: none;
+  border-radius: 0;
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #e9e9e9, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+  box-sizing: border-box;
+  color: transparent;
+  padding: 0 5px;
+  text-shadow: 0 0 #222;
+  margin-bottom: 400px;
+}
+
+#browser-bottom-info {
+  display: flex;
+  align-items: center;
+  height: 23px;
+  margin-left: 7px;
+  width: 935px;
+  position: absolute;
+  bottom: 0.5%;
+}
+
+.ie-bottom-box {
+  width: 50px;
+  height: 23px;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px rgb(166, 166, 166), inset -2px -2px #dfdfdf, inset 2px 2px grey;
+}
+
+#first-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-left: 5px;
+  flex-grow: 10;
+}
+
+#last-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 160px;
+  padding-left: 5px;
+}
+
+#browser-bottom-info p {
+  margin: 0;
 }
 
 .line {
@@ -274,10 +348,10 @@ p {
   align-items: center;
   gap: 5px;
   height: 23px;
-  width: 100px;
+  width: 105px;
   padding: 0 10px 0 10px;
   margin-right: auto;
-  box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px rgb(166, 166, 166), inset -2px -2px #dfdfdf, inset 2px 2px grey;
 }
 
 #time {
@@ -493,7 +567,7 @@ a:hover,
 /* RESPONSIVENESS */
 @media screen and (max-height: 950px) {
   #blog-contents {
-    height: 68vh;
+    height: 65vh;
   }
 }
 
@@ -534,7 +608,9 @@ a:hover,
 
   #edit-bar,
   #explorer-icons,
-  #address-bar {
+  #address-bar,
+  #browser-scroll-bar,
+  #browser-bottom-info {
     display: none;
   }
 
