@@ -68,50 +68,74 @@ button:hover {
 
 #home {
   display: block;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 #about {
   display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 #bus {
   display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 #cameras {
   display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 #collections {
   display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 #blinkies {
   display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 #buttons {
   display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 #gifs {
   display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 #stamps {
   display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 #resources {
   display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 #shrines {
   display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 #stwabewwy {
   display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .visitcount a {
@@ -573,6 +597,8 @@ marquee img {
   background-color: var(--boxbackground);
   height: 155.5px;
   overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .navbar:hover {
@@ -722,6 +748,8 @@ marquee img {
   color: var(--text);
   scrollbar-width: thin;
   background-color: var(--boxbackground);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .changelog:hover {
@@ -777,6 +805,8 @@ marquee img {
   border: 1px solid var(--text);
   scrollbar-width: thin;
   background-color: var(--boxbackground);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .buttons:hover {
