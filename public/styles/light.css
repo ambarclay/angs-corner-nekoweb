@@ -5,9 +5,15 @@
   --boxtitle: #faecec;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 html {
   cursor: url("/images/win982.png"), default;
   height: 100vh;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 body {

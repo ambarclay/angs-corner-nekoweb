@@ -14,12 +14,18 @@
   font-style: normal;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 html {
   width: 100vw;
   padding-left: 5px;
   padding-right: 5px;
   overflow-x: hidden;
   cursor: url("/images/win982.png"), default;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 body {

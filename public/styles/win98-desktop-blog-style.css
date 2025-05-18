@@ -2,6 +2,12 @@ html {
   height: 100vh;
   width: 100vw;
   cursor: url("/images/win982.png"), default;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 body {
