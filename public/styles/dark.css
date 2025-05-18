@@ -765,6 +765,8 @@ marquee img {
 .changelogposts {
   height: 100px;
   overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .changelogposts > p {
@@ -805,8 +807,6 @@ marquee img {
   border: 1px solid var(--text);
   scrollbar-width: thin;
   background-color: var(--boxbackground);
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 .buttons:hover {
@@ -883,6 +883,8 @@ marquee img {
   overflow-y: auto;
   border: 1px solid var(--text);
   padding: 10px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .list:hover {
@@ -999,6 +1001,8 @@ marquee img {
   overflow-x: auto;
   overflow-y: hidden;
   margin: 0 auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .restoration-img {
