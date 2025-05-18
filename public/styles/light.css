@@ -830,6 +830,8 @@ marquee img {
   border-radius: 5px;
   scrollbar-width: thin;
   background-color: var(--boxbackground);
+  max-height: 35px;
+  align-items: center;
 }
 
 .buttons:hover {
@@ -1030,8 +1032,7 @@ marquee img {
   overflow-x: auto;
   overflow-y: hidden;
   margin: 0 auto;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  scrollbar-width: thin;
 }
 
 .restoration-img {
