@@ -41,6 +41,10 @@ p {
   font-size: 15px;
 }
 
+ul {
+  font-size: 15px;
+}
+
 a:hover {
   cursor: url("/images/win98/win98-pointer.png"), pointer;
 }

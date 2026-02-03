@@ -394,6 +394,10 @@ button:hover {
   border: 1px solid var(--hilight);
 }
 
+.chatbox-error {
+  height: 286px;
+}
+
 .pp {
   padding: 0;
   margin: 0;
