@@ -1,38 +1,52 @@
-/*
-    Don't use this file to edit your site style! Create a different CSS file for that.
-    This file defines how custom elements (like sitebox) will look like.
-    Setting CSS that breaks main nekoweb site on purpose is prohibited and may result in ban and site deletion!
-*/
-
 /* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
 .site-box {
   text-align: center;
-  background-image: url(https://angs-corner.nekoweb.org/images/site-box.png); /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
+  background-image: url("//angs-corner.nekoweb.org/images/pink145.jpg");
   background-repeat: no-repeat;
-  color: #b08271;
-  font-size: 12px;
+  background-size: cover;
+  border: 2px solid #8099cb;
+  border-radius: 15px;
 }
 .site-box > a > p {
-  color: var(--darkbrown);
-  font-weight: bold;
+  color: #573946;
+  font-family: Comic Sans MS;
+  font-size: 15px;
+  background-color: transparent;
+  margin-left: 25px;
+  margin-right: 30px;
+  margin-top: 10px;
+  position: absolute;
+  top: -150px;
 }
 .site-box > a > span {
-  color: var(--darkbrown);
+  display: none;
 }
 
-/* Style for your post box (must start with ".post-box") */
-.post-box {
-  background-color: #fff2cc;
-  border: 4px solid #ecbfa6;
-  padding: 15px;
-  border-radius: 5px;
-  color: #634c53;
-  font-weight: normal;
+.site-box .sitefeature {
+  border-radius: 15px;
+  border: 2px solid white;
+  background-image: url("//angs-corner.nekoweb.org/images/angs-corner-double.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 26px;
 }
 
-.post-box .post-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 0px;
+.site-box .sitefeature img {
+  display: none;
+}
+
+.site-box:hover {
+  background-image: url("//angs-corner.nekoweb.org/images/starbg2.gif");
+  border: 2px solid #ccff00;
+  border-radius: 0px;
+  p {
+    color: white;
+    font-family: Monospace;
+    font-size: 13px;
+    margin-left: 25px;
+    margin-right: 30px;
+    margin-top: 13px;
+    border-radius: 5px;
+  }
 }
